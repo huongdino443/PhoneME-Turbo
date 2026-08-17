@@ -32,3 +32,4 @@ venv/
 
 # Local staging
 .local/
+docs/github-repository-status.md
