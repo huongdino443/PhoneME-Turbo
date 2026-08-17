@@ -1,0 +1,34 @@
+# Signing material — never commit
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+
+# Local secrets and credentials
+.env
+.env.*
+*secret*
+*password*
+
+# Build output and private workspace
+work/
+out/
+original/
+*.unsigned.apk
+*.idsig
+*.log
+logcat*.txt
+phoneme_logcat.txt
+
+# Python and editor files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+.idea/
+.vscode/
+
+# Local staging
+.local/
