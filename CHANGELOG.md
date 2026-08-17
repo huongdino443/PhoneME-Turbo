@@ -4,7 +4,11 @@
 
 ### Tóm tắt
 
-Bản 1.1.0 là bản nâng cấp stable từ hai nền PhoneME-MOD sơ khai: HEAP32M dành cho thiết bị Android đời thấp và HEAP64M/R39 dành cho màn hình nHD, Android mới hơn. Tên hiển thị của dự án và bản Turbo thường là **PhoneME-Turbo**; bản nHD giữ tên phân biệt **PhoneME-Turbo(nHD)** trong tài liệu và tên file phát hành.
+Bản 1.1.0 là bản nâng cấp stable bắt đầu từ APK PhoneME-MOD sơ khai `be.preuveneers.phoneme.fpmidp` do người dùng cung cấp làm nền tham chiếu chung. Từ nền đó, dự án được phát triển thành hai hướng: HEAP32M cho Turbo thường và HEAP64M cho bản nHD; r39 là mốc/bản bàn giao của hướng HEAP64M, không phải tên của nền gốc chung. Tên hiển thị của dự án và bản Turbo thường là **PhoneME-Turbo**; bản nHD giữ tên phân biệt **PhoneME-Turbo(nHD)** trong tài liệu và tên file phát hành.
+
+### Nền tham chiếu và quan hệ các nhánh
+
+APK sơ khai được dùng làm mốc đối chiếu có package `be.preuveneers.phoneme.fpmidp`, version `1.0.0`, `minSdkVersion 8`, `targetSdkVersion 8`, SHA-256 `1d02bc4de2730a7255c49bddd3f9d784c7dc52d4795840c7e1dcc401e739a185`. Từ nền này, hướng HEAP32M và hướng HEAP64M được phát triển song song theo mục tiêu thiết bị khác nhau. Mốc `r39` thuộc lịch sử bàn giao của hướng HEAP64M và được dùng làm cơ sở tiếp nối cho bản nHD; không nên hiểu r39 là nguồn gốc độc lập của cả hai bản.
 
 ### Thay đổi dùng chung
 
@@ -16,11 +20,11 @@ Logging được tiết chế: bản thường không tự ghi một lượng l�
 
 ### PhoneME-Turbo
 
-Bản Turbo thường sử dụng nền HEAP32M, duy trì `minSdkVersion 8` và `targetSdkVersion 8` nhằm giữ khả năng tương thích với Android cũ. Font game của nhánh này được thu nhỏ khoảng 66% để bố cục gọn hơn. Audio R39 ổn định và các thay đổi input/Unicode được giữ cùng pipeline đã kiểm thử.
+Bản Turbo thường sử dụng hướng nền HEAP32M phát triển từ APK sơ khai chung, duy trì `minSdkVersion 8` và `targetSdkVersion 8` nhằm giữ khả năng tương thích với Android cũ. Font game của nhánh này được thu nhỏ khoảng 66% để bố cục gọn hơn. Pipeline audio ổn định cùng các thay đổi input/Unicode đã được giữ trong bản stable sau quá trình kiểm thử.
 
 ### PhoneME-Turbo(nHD)
 
-Bản Turbo(nHD) sử dụng nền HEAP64M/R39, nhắm tới màn hình 360×640/nHD và Android mới hơn với `minSdkVersion 18`, `targetSdkVersion 22`. Bản này có lớp OpenGL/co giãn hình ảnh nhằm hiển thị tốt hơn trên màn hình độ phân giải cao và ưu tiên đường font hệ thống ở nhánh nHD.
+Bản Turbo(nHD) sử dụng hướng nền HEAP64M phát triển từ APK sơ khai chung và tiếp nhận các thành phần từ mốc bàn giao r39. Bản này nhắm tới màn hình 360×640/nHD và Android mới hơn với `minSdkVersion 18`, `targetSdkVersion 22`, đồng thời có lớp OpenGL/co giãn hình ảnh nhằm hiển thị tốt hơn trên màn hình độ phân giải cao và ưu tiên đường font hệ thống ở nhánh nHD.
 
 ### Biến thể NetworkKeep
 

@@ -1,6 +1,6 @@
 # PhoneME-Turbo
 
-**PhoneME-Turbo** là dự án PhoneME-MOD cho Android, phát triển từ các nhánh HEAP32M và HEAP64M/R39. Bản phát hành 1.1.0 tập trung vào khả năng chạy ổn định, nhập liệu Unicode tiếng Việt, giao diện quản lý game gọn hơn và cài game Java trực tiếp bằng file JAR.
+**PhoneME-Turbo** là dự án PhoneME-MOD cho Android, bắt đầu từ APK PhoneME sơ khai `be.preuveneers.phoneme.fpmidp` được dùng làm nền tham chiếu chung. Từ nền này, dự án được phát triển theo hai hướng: Turbo thường theo cấu hình HEAP32M và Turbo(nHD) theo cấu hình HEAP64M; `r39` là mốc/bản bàn giao của hướng HEAP64M, không phải nguồn gốc độc lập của toàn bộ dự án. Bản phát hành 1.1.0 tập trung vào khả năng chạy ổn định, nhập liệu Unicode tiếng Việt, giao diện quản lý game gọn hơn và cài game Java trực tiếp bằng file JAR.
 
 > Đây là dự án cộng đồng và là các APK đã được chỉnh sửa từ PhoneME. Hãy sao lưu dữ liệu trước khi cài đặt, chỉ cài APK từ nguồn mà bạn tin cậy và tự chịu trách nhiệm về việc sử dụng trên thiết bị của mình.
 
@@ -19,11 +19,11 @@ Các APK đã ký và mã SHA-256 được công bố trong [GitHub Release v1.1
 
 ## Tính năng chính
 
-So với các bản PhoneME-MOD sơ khai HEAP32M và HEAP64M/R39, PhoneME-Turbo có giao diện danh sách game dạng lưới, tối ưu cho cả màn hình dọc và ngang. Game mới cài được đưa lên đầu danh sách, và game Java có thể được cài trực tiếp bằng file `.jar` mà không cần chuẩn bị thêm file `.jad`.
+So với APK PhoneME sơ khai dùng làm nền tham chiếu, PhoneME-Turbo có giao diện danh sách game dạng lưới, tối ưu cho cả màn hình dọc và ngang. Game mới cài được đưa lên đầu danh sách, và game Java có thể được cài trực tiếp bằng file `.jar` mà không cần chuẩn bị thêm file `.jad`. Các biến thể HEAP32M và HEAP64M là hai hướng tối ưu phần cứng được phát triển từ cùng nền sơ khai đó.
 
 Phần nhập liệu được gia cố để xử lý tốt hơn bàn phím ảo, bàn phím vật lý, trạng thái Shift/Alt, xóa, xuống dòng và Telex. Bộ native Unicode bridge cho phép chuyển các ký tự BMP tiếng Việt mở rộng như `ă`, `ạ`, `ư`, `đ`, `â`, `ê` và `ô` vào CVM theo giao thức key event 16-bit của PhoneME. Bàn phím ảo SIP được bật mặc định thông qua `cbSIP`.
 
-Bản Turbo thường giữ mức tương thích Android cũ với `minSdkVersion 8` và `targetSdkVersion 8`; bản nHD dùng nền HEAP64M/R39, có lớp OpenGL/co giãn hình ảnh và yêu cầu Android mới hơn với `minSdkVersion 18`, `targetSdkVersion 22`. Font game ở nhánh Turbo thường được thu nhỏ khoảng 66% để giao diện gọn hơn. Audio R39 và các guard vòng đời được giữ lại trong bản stable.
+Bản Turbo thường giữ mức tương thích Android cũ với `minSdkVersion 8` và `targetSdkVersion 8`; bản nHD phát triển theo hướng HEAP64M và tiếp nhận các thành phần từ mốc bàn giao r39, có lớp OpenGL/co giãn hình ảnh và yêu cầu Android mới hơn với `minSdkVersion 18`, `targetSdkVersion 22`. Font game ở nhánh Turbo thường được thu nhỏ khoảng 66% để giao diện gọn hơn. Pipeline audio ổn định và các guard vòng đời đã được giữ lại trong bản stable.
 
 Hai biến thể `NetworkKeep` bổ sung `PARTIAL_WAKE_LOCK` và `WifiLock` trong `PhoneMEMonitorService`, đồng thời thêm các quyền `WAKE_LOCK`, `ACCESS_WIFI_STATE` và `CHANGE_WIFI_STATE`. Các lock được acquire khi service game bắt đầu và release khi service kết thúc. Android đời cao vẫn có thể giới hạn mạng nền do chế độ tiết kiệm pin hoặc chính game đóng phiên, vì vậy đây không phải cam kết reconnect cho mọi game.
 
@@ -53,6 +53,20 @@ Các script trong `scripts/` được thiết kế theo nguyên tắc fail-close
 ## Trạng thái phát hành
 
 `v1.1.0` là bản stable đầu tiên được công bố dưới tên PhoneME-Turbo. Bản phát hành đã được build, zipalign, ký và kiểm tra chữ ký APK; các APK stable đã được người dùng kiểm thử thực tế trước khi chia sẻ. Những vấn đề âm thanh riêng biệt của một số game cụ thể không được coi là đã giải quyết tuyệt đối cho mọi game, vì hành vi loop còn phụ thuộc vào game và thiết bị.
+
+## Nền tham chiếu
+
+APK sơ khai được dùng làm điểm xuất phát có các thông tin đã kiểm tra như sau:
+
+| Thuộc tính | Giá trị |
+|---|---|
+| Tên file tham chiếu | `be.preuveneers.phoneme.fpmidp--1.apk` |
+| Package | `be.preuveneers.phoneme.fpmidp` |
+| Version | `1.0.0` (`versionCode=1`) |
+| minSdk / targetSdk | `8 / 8` |
+| SHA-256 | `1d02bc4de2730a7255c49bddd3f9d784c7dc52d4795840c7e1dcc401e739a185` |
+
+APK này là mốc nền sơ khai được người dùng cung cấp để đối chiếu. Trong lịch sử phát triển của repository, HEAP32M và HEAP64M là các hướng phát triển từ nền đó; r39 chỉ được dùng như mốc bàn giao/nguồn tiếp nối của hướng HEAP64M cho bản nHD.
 
 ## Giấy phép và nguồn gốc
 
