@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.2] — PhoneME-Turbo stable tiếp theo
+
+### Tóm tắt
+
+Thêm hộp thoại quyền bộ nhớ trên bản nHD, giúp người dùng biết và cấp quyền khi cần trên Android mới. Thêm file manager tích hợp ở cả hai bản, giúp chọn, tìm kiếm và sắp xếp file JAR/JAD ngay trong ứng dụng.
+
+### SHA-256
+
+| File | SHA-256 |
+|---|---|
+| `PhoneME-Turbo-1.1.2.apk` | `6376737186c581220533e509705ec801f3d8d0467f875280f0b61f62d7424eb2` |
+| `PhoneME-Turbo-nHD-1.1.2.apk` | `51e60854b35955e0ce30bbd4e2cfd699c7da575b858127cd7f966075ec5d9aec` |
+
 ## [1.1.0] — PhoneME-Turbo stable
 
 ### Tóm tắt
@@ -41,4 +54,5 @@ Hai APK phát hành có thay đổi ở vòng đời dịch vụ để game onli
 
 Bản phát hành không tuyên bố mọi game đều có cùng hành vi âm thanh hoặc kết nối mạng. Một số game có cách loop âm thanh và cơ chế phiên mạng riêng, có thể cho kết quả khác nhau theo thiết bị. Người dùng nên sao lưu dữ liệu trước khi cài đặt và kiểm tra SHA-256 nếu cần xác minh file tải xuống.
 
+[1.1.2]: https://github.com/huongdino443/PhoneME-Turbo/releases/tag/v1.1.2 "PhoneME-Turbo 1.1.2"
 [1.1.0]: https://github.com/huongdino443/PhoneME-Turbo/releases/tag/v1.1.0 "PhoneME-Turbo 1.1.0"

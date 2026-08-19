@@ -1,19 +1,21 @@
 # PhoneME-Turbo
 
-**PhoneME-Turbo** là dự án PhoneME-MOD cho Android, bắt đầu từ APK PhoneME sơ khai `be.preuveneers.phoneme.fpmidp` do người dùng cung cấp làm nền tham chiếu chung. Từ nền này, dự án được phát triển thành hai bản phát hành: **PhoneME-Turbo** theo hướng HEAP32M và **PhoneME-Turbo(nHD)** theo hướng HEAP64M. Bản 1.1.0 tập trung vào khả năng chạy ổn định, nhập liệu Unicode tiếng Việt, giao diện quản lý game gọn hơn, cài game Java trực tiếp bằng file JAR và duy trì hoạt động mạng tốt hơn khi đa nhiệm.
+**PhoneME-Turbo** là dự án PhoneME-MOD cho Android, bắt đầu từ APK PhoneME sơ khai `be.preuveneers.phoneme.fpmidp` do người dùng cung cấp làm nền tham chiếu chung. Từ nền này, dự án được phát triển thành hai bản phát hành: **PhoneME-Turbo** theo hướng HEAP32M và **PhoneME-Turbo(nHD)** theo hướng HEAP64M. Bản 1.1.2 giữ các cải tiến ổn định, Unicode tiếng Việt, giao diện quản lý game và hoạt động mạng tốt hơn khi đa nhiệm.
 
 > Đây là dự án cộng đồng và là các APK đã được chỉnh sửa từ PhoneME. Hãy sao lưu dữ liệu trước khi cài đặt, chỉ cài APK từ nguồn mà bạn tin cậy và tự chịu trách nhiệm về việc sử dụng trên thiết bị của mình.
 
 ## Tải xuống
 
-Hai APK đã ký và mã SHA-256 được công bố trong [GitHub Release v1.1.0](https://github.com/huongdino443/PhoneME-Turbo/releases/tag/v1.1.0).
+Hai APK đã ký và mã SHA-256 được công bố trong [GitHub Release v1.1.2](https://github.com/huongdino443/PhoneME-Turbo/releases/tag/v1.1.2).
 
 | Bản | Thiết bị mục tiêu | minSdk / targetSdk | SHA-256 |
 |---|---|---:|---|
-| `PhoneME-Turbo.apk` | Android đời thấp, cấu hình khiêm tốn | 8 / 8 | `aa42e5979b5bb7ce75d51a131b3888311b0c26b91f57cfeb3219078a83d260cb` |
-| `PhoneME-Turbo-nHD.apk` | Android mới hơn, màn hình nHD hoặc độ phân giải cao | 18 / 22 | `fd1a2fb7d83731970a226d2456f1aefba47840569e244882ace3861bd67cdd22` |
+| `PhoneME-Turbo-1.1.2.apk` | Android đời thấp, cấu hình khiêm tốn | 8 / 8 | `6376737186c581220533e509705ec801f3d8d0467f875280f0b61f62d7424eb2` |
+| `PhoneME-Turbo-nHD-1.1.2.apk` | Android mới hơn, màn hình nHD hoặc độ phân giải cao | 18 / 22 | `51e60854b35955e0ce30bbd4e2cfd699c7da575b858127cd7f966075ec5d9aec` |
 
 Hai bản trên là các bản phát hành cuối được chia sẻ trong repository. Bản thường phù hợp với thiết bị Android cũ; bản nHD phù hợp hơn với thiết bị Android mới và màn hình độ phân giải cao.
+
+Ở bản 1.1.2, bản nHD có thêm hộp thoại quyền bộ nhớ để hướng dẫn cấp quyền trên Android mới. Cả hai bản có file manager tích hợp, giúp chọn, tìm kiếm và sắp xếp file JAR/JAD ngay trong ứng dụng.
 
 ## Tính năng chính
 
@@ -50,7 +52,7 @@ Patch native phụ thuộc vào đúng bố cục ELF của nền PhoneME tươn
 
 ## Trạng thái phát hành
 
-`v1.1.0` là bản stable đầu tiên được công bố dưới tên PhoneME-Turbo. Hai APK đã được build, zipalign, ký và kiểm tra chữ ký; chúng đã được người dùng kiểm thử thực tế trước khi chia sẻ. Một số game có cách loop âm thanh riêng và có thể cho kết quả khác nhau theo thiết bị, vì vậy bản phát hành không tuyên bố mọi game đều có cùng hành vi âm thanh.
+`v1.1.2` là bản stable tiếp theo của PhoneME-Turbo. Hai APK đã được build, ký và kiểm tra chữ ký trước khi phát hành. Một số game có cách loop âm thanh riêng và có thể cho kết quả khác nhau theo thiết bị, vì vậy bản phát hành không tuyên bố mọi game đều có cùng hành vi âm thanh.
 
 ## Nền tham chiếu
 
