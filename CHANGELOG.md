@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.1.4] — PhoneME-Turbo stable
+
+### Tóm tắt
+
+Đồng bộ giao diện LCDUI theo dark theme, cải thiện hiển thị ChoiceGroup/List và TextField/TextBox, đồng thời bổ sung layout launcher cho chế độ ngang. Runtime game, touch, audio, RMS, File Manager và khả năng tương thích Android cũ được giữ nguyên.
+
+Bản phát hành được ký lại theo quy trình tương thích Android 2.3 với cùng release certificate như 1.1.3, gồm các lớp v1, v2 và v3. Bản này đã được kiểm tra cài đặt thực tế trên Android 2.3.
+
+### SHA-256
+
+| File | SHA-256 |
+|---|---|
+| `PhoneME-Turbo-1.1.4.apk` | `d5fc5b06bc74727537b33fc3ee446f002dce2f43d56c197f6d05b1e0a210424e` |
+
+
 ## [1.1.2] — PhoneME-Turbo stable tiếp theo
 
 ### Tóm tắt
@@ -54,5 +69,6 @@ Hai APK phát hành có thay đổi ở vòng đời dịch vụ để game onli
 
 Bản phát hành không tuyên bố mọi game đều có cùng hành vi âm thanh hoặc kết nối mạng. Một số game có cách loop âm thanh và cơ chế phiên mạng riêng, có thể cho kết quả khác nhau theo thiết bị. Người dùng nên sao lưu dữ liệu trước khi cài đặt và kiểm tra SHA-256 nếu cần xác minh file tải xuống.
 
+[1.1.4]: https://github.com/huongdino443/PhoneME-Turbo/releases/tag/v1.1.4 "PhoneME-Turbo 1.1.4"
 [1.1.2]: https://github.com/huongdino443/PhoneME-Turbo/releases/tag/v1.1.2 "PhoneME-Turbo 1.1.2"
 [1.1.0]: https://github.com/huongdino443/PhoneME-Turbo/releases/tag/v1.1.0 "PhoneME-Turbo 1.1.0"
