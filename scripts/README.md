@@ -11,7 +11,7 @@ Các script trong thư mục này là phần tái hiện những thay đổi c�
 
 ## Quy trình khái quát
 
-Trước tiên cần có một APK nền phù hợp, apktool, zipalign, apksigner và cây giải mã tương ứng. Hai APK phát hành hiện tại đều bắt đầu từ APK PhoneME sơ khai chung, sau đó được phát triển theo hướng HEAP32M hoặc HEAP64M. Với patch smali, chạy script trên cây giải mã. Với native bridge, chuẩn bị patch ELF có đúng bố cục các CVM chunk của nền tương ứng rồi chạy script với các tham số đầu vào được mô tả trong phần trợ giúp của script.
+Trước tiên cần có một APK nền phù hợp, apktool, zipalign, apksigner và cây giải mã tương ứng. Các script này là lịch sử patch của nhiều mốc. Release hiện tại là PhoneME Turbo 1.2.0, đi theo lineage lịch sử 1.1.2 qua v337–v340; chúng không phải một quy trình from-source hoàn chỉnh cho release hiện tại. Với patch smali, chạy script trên cây giải mã. Với native bridge, chuẩn bị patch ELF có đúng bố cục các CVM chunk của nền tương ứng rồi chạy script với các tham số đầu vào được mô tả trong phần trợ giúp của script.
 
 Sau khi patch, hãy build lại bằng apktool, zipalign và ký bằng một keystore riêng nằm ngoài repository. Dùng `apksigner verify` để kiểm tra artifact cuối cùng. Các script này không tự ký APK vì việc chia sẻ khóa hoặc mật khẩu là không an toàn.
 

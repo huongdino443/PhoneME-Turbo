@@ -1,8 +1,10 @@
 # PhoneME-Turbo — Ghi chú tương thích
 
+> **Tài liệu lịch sử.** Bảng dưới đây mô tả hai artifact cũ, không phải mô hình phát hành hiện tại. Release hiện tại là **PhoneME Turbo 1.2.0**, phát triển từ dòng lịch sử 1.1.2 qua v337–v340; không còn phân phối dưới tên nHD riêng. Xem [báo cáo đối chiếu v1.2.0](V1.2.0-VS-1.1.2-AUDIT.md).
 
 
-Tài liệu này mô tả hai APK cuối được phát hành trong repository.
+
+Tài liệu này mô tả hai APK cuối của giai đoạn 1.1.x được phát hành trong repository.
 
 
 

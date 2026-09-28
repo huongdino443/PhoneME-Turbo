@@ -1,10 +1,11 @@
 # Release artifacts
 
-Các APK phát hành không được commit trực tiếp vào lịch sử Git để giữ repository gọn và dễ clone. APK Turbo stable 1.1.4 được đính kèm trong [GitHub Release v1.1.4](https://github.com/huongdino443/PhoneME-Turbo/releases/tag/v1.1.4), kèm SHA-256 trong `README.md` và `CHANGELOG.md`.
+Repository hiện có một dòng phát hành chính: **PhoneME Turbo 1.2.0**. APK được phát triển từ dòng lịch sử 1.1.2 qua v337–v340; tên nHD chỉ còn dùng trong provenance của các artifact cũ, không phải tên sản phẩm hiện tại.
 
 | Bản | File | SHA-256 |
 |---|---|---|
-| PhoneME-Turbo | `PhoneME-Turbo-1.1.4.apk` | `d5fc5b06bc74727537b33fc3ee446f002dce2f43d56c197f6d05b1e0a210424e` |
-| PhoneME-Turbo(nHD) | `PhoneME-Turbo-nHD-1.1.2.apk` | `51e60854b35955e0ce30bbd4e2cfd699c7da575b858127cd7f966075ec5d9aec` |
+| PhoneME Turbo 1.2.0 | [`v1.2.0/PhoneME-Turbo-1.2.0.apk`](v1.2.0/PhoneME-Turbo-1.2.0.apk) | `51a83ec158dbcf38ddbab4e3e9ca73d60519a57180917b80a2a626e7272bd55a` |
 
-Bản Turbo 1.1.4 dùng release certificate ổn định và quy trình ký v1/v2/v3 đã kiểm tra trên Android 2.3. Không đặt keystore hoặc mật khẩu ký APK trong thư mục này. Nếu tự build lại, hãy dùng keystore riêng và không commit nó.
+Bundle release đầy đủ gồm APK, checksum, verification, notices và source/provenance trong [`v1.2.0/`](v1.2.0/). Không commit private keystore hoặc mật khẩu ký APK.
+
+Các release 1.1.x được giữ trong Git history/tài liệu lịch sử để đối chiếu. Khi cài đặt hoặc phát triển tiếp, ưu tiên artifact 1.2.0.

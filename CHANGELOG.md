@@ -1,74 +1,39 @@
-# Changelog
+# PhoneME-Turbo changelog
 
-## [1.1.4] — PhoneME-Turbo stable
+## 1.2.0 — bản phát hành chính hiện tại
 
-### Tóm tắt
+Bản 1.2.0 là dòng phát hành chính duy nhất hiện tại của repository và được phát triển từ **PhoneME-Turbo nHD 1.1.2** theo lineage v337–v340. Đây không phải là bản trộn binary giữa Turbo thường 1.1.4 và nHD 1.1.2.
 
-Đồng bộ giao diện LCDUI theo dark theme, cải thiện hiển thị ChoiceGroup/List và TextField/TextBox, đồng thời bổ sung layout launcher cho chế độ ngang. Runtime game, touch, audio, RMS, File Manager và khả năng tương thích Android cũ được giữ nguyên.
+### Thay đổi chính
 
-Bản phát hành được ký lại theo quy trình tương thích Android 2.3 với cùng release certificate như 1.1.3, gồm các lớp v1, v2 và v3. Bản này đã được kiểm tra cài đặt thực tế trên Android 2.3.
+- Điều khiển riêng theo từng game với gamepad J2ME, key mapping và tùy chọn display/touch/GL/Canvas.
+- EdgeSwipe có Exit, Settings, Virtual Keyboard và Gamepad.
+- Bàn phím launcher hiển thị dạng overlay, không làm co vùng nội dung.
+- Cải thiện touch pass-through quanh gamepad và vùng ngoài framebuffer.
+- Điều chỉnh EdgeSwipe cho màn hình nhỏ tới nhóm nHD.
+- Xử lý lại layout launcher sau xoay màn hình và duy trì runtime/GL theo chính sách của ứng dụng.
+- Bổ sung có chọn lọc Nokia API shim và xử lý class/JAR cũ bằng bản sao suite riêng khi cần.
+- Cải thiện LCDUI menu nhiều mục, scrolling và dark theme.
 
-### SHA-256
+APK, source/provenance, checksum và verification nằm tại [`releases/v1.2.0/`](releases/v1.2.0/).
 
-| File | SHA-256 |
-|---|---|
-| `PhoneME-Turbo-1.1.4.apk` | `d5fc5b06bc74727537b33fc3ee446f002dce2f43d56c197f6d05b1e0a210424e` |
+### Giới hạn đã biết
 
+Bản 1.2.0 không tuyên bố bổ sung tổng quát cho MMAPI music playback, tự động chuyển playlist hoặc M3G rendering. Hành vi game vẫn có thể khác theo thiết bị, Android version, native capability và server của game.
 
-## [1.1.2] — PhoneME-Turbo stable tiếp theo
+## 1.1.4 — mốc cuối của dòng Turbo thường/HEAP32M
 
-### Tóm tắt
+1.1.4 là mốc stable cuối của dòng HEAP32M/PhoneME-Turbo đời thấp. Dòng này dừng tại 1.1.4; không được hiểu là nền trực tiếp của binary v1.2.0.
 
-Thêm hộp thoại quyền bộ nhớ trên bản nHD, giúp người dùng biết và cấp quyền khi cần trên Android mới. Thêm file manager tích hợp ở cả hai bản, giúp chọn, tìm kiếm và sắp xếp file JAR/JAD ngay trong ứng dụng.
+Các cải tiến lịch sử gồm giao diện LCDUI dark theme, File Manager tích hợp, Unicode tiếng Việt, native input bridge và các thay đổi lifecycle/network được ghi trong Git history và tài liệu cũ.
 
-### SHA-256
+## 1.1.2 — mốc lineage trực tiếp của v1.2.0
 
-| File | SHA-256 |
-|---|---|
-| `PhoneME-Turbo-1.1.2.apk` | `6376737186c581220533e509705ec801f3d8d0467f875280f0b61f62d7424eb2` |
-| `PhoneME-Turbo-nHD-1.1.2.apk` | `51e60854b35955e0ce30bbd4e2cfd699c7da575b858127cd7f966075ec5d9aec` |
+PhoneME-Turbo nHD 1.1.2 là điểm phát triển trực tiếp của lineage v337–v340 và bản phát hành 1.2.0. Các patch về giao diện, EdgeSwipe, gamepad, lifecycle, Nokia compatibility và layout nHD được tiếp tục xử lý trên dòng này.
 
-## [1.1.0] — PhoneME-Turbo stable
+## Các mốc cũ
 
-### Tóm tắt
+- `v1.1.3`: phát hành tiếp nối với quy trình ký tương thích legacy.
+- `v1.1.0`: mốc nền trước các thay đổi phát hành sau đó.
 
-Bản 1.1.0 là bản nâng cấp stable bắt đầu từ APK PhoneME-MOD sơ khai `be.preuveneers.phoneme.fpmidp` do người dùng cung cấp làm nền tham chiếu chung. Từ nền đó, dự án được phát triển thành hai hướng: HEAP32M cho **PhoneME-Turbo** và HEAP64M cho **PhoneME-Turbo(nHD)**.
-
-### Nền tham chiếu và quan hệ các nhánh
-
-APK sơ khai được dùng làm nền đối chiếu có package `be.preuveneers.phoneme.fpmidp`, version `1.0.0`, `minSdkVersion 8`, `targetSdkVersion 8`, SHA-256 `1d02bc4de2730a7255c49bddd3f9d784c7dc52d4795840c7e1dcc401e739a185`. Từ nền này, hướng HEAP32M và hướng HEAP64M được phát triển song song theo mục tiêu thiết bị khác nhau.
-
-### Thay đổi dùng chung
-
-Danh sách game được chuyển sang giao diện lưới, gồm bố cục 3 cột dọc và 4 cột ngang. Game cài sau được đưa lên đầu danh sách. Trình cài hỗ trợ chọn file `.jar` trực tiếp, không yêu cầu file `.jad` đi kèm. Ô nhập đường dẫn được giới hạn một dòng để tránh xuống dòng ngoài ý muốn.
-
-Lớp xử lý input được gia cố cho bàn phím ảo, bàn phím vật lý, Shift/Alt, Telex, xóa và xuống dòng. Native Unicode bridge dựa trên InputFix7 được tích hợp để các ký tự Unicode BMP tiếng Việt đi qua CVM theo giao thức key event nội bộ của PhoneME.
-
-Logging được tiết chế: bản phát hành không tự ghi một lượng lớn log nền; phần ghi log chẩn đoán chỉ hoạt động khi chế độ debug phù hợp được bật. Các guard vòng đời được giữ ở mức hẹp để giảm rủi ro khi surface hoặc input connection chưa sẵn sàng.
-
-### PhoneME-Turbo
-
-Bản thường sử dụng hướng nền HEAP32M phát triển từ APK sơ khai chung, duy trì `minSdkVersion 8` và `targetSdkVersion 8` nhằm giữ khả năng tương thích với Android cũ. Font game của nhánh này được thu nhỏ khoảng 66% để bố cục gọn hơn. Các thay đổi input, Unicode, audio, giao diện và vòng đời đã được giữ trong bản stable sau quá trình kiểm thử.
-
-### PhoneME-Turbo(nHD)
-
-Bản nHD sử dụng hướng nền HEAP64M phát triển từ APK sơ khai chung. Bản này nhắm tới màn hình 360×640/nHD và Android mới hơn với `minSdkVersion 18`, `targetSdkVersion 22`, đồng thời có lớp OpenGL/co giãn hình ảnh nhằm hiển thị tốt hơn trên màn hình độ phân giải cao.
-
-### Tối ưu hoạt động mạng khi đa nhiệm
-
-Hai APK phát hành có thay đổi ở vòng đời dịch vụ để game online có cơ hội duy trì hoạt động mạng tốt hơn khi Activity bị đưa xuống nền. Với thiết bị dùng Wi‑Fi, phần theo dõi kết nối được xử lý thận trọng trong thời gian dịch vụ hoạt động và được giải phóng khi dịch vụ kết thúc. Android đời cao vẫn có thể cắt mạng do tối ưu pin, giới hạn dữ liệu nền, timeout của game hoặc máy chủ.
-
-### SHA-256
-
-| File | SHA-256 |
-|---|---|
-| `PhoneME-Turbo.apk` | `aa42e5979b5bb7ce75d51a131b3888311b0c26b91f57cfeb3219078a83d260cb` |
-| `PhoneME-Turbo-nHD.apk` | `fd1a2fb7d83731970a226d2456f1aefba47840569e244882ace3861bd67cdd22` |
-
-### Lưu ý
-
-Bản phát hành không tuyên bố mọi game đều có cùng hành vi âm thanh hoặc kết nối mạng. Một số game có cách loop âm thanh và cơ chế phiên mạng riêng, có thể cho kết quả khác nhau theo thiết bị. Người dùng nên sao lưu dữ liệu trước khi cài đặt và kiểm tra SHA-256 nếu cần xác minh file tải xuống.
-
-[1.1.4]: https://github.com/huongdino443/PhoneME-Turbo/releases/tag/v1.1.4 "PhoneME-Turbo 1.1.4"
-[1.1.2]: https://github.com/huongdino443/PhoneME-Turbo/releases/tag/v1.1.2 "PhoneME-Turbo 1.1.2"
-[1.1.0]: https://github.com/huongdino443/PhoneME-Turbo/releases/tag/v1.1.0 "PhoneME-Turbo 1.1.0"
+Các artifact cũ được giữ trong Git history và tài liệu lịch sử để đối chiếu. Khi cần cài đặt hoặc tiếp tục phát triển, ưu tiên bundle `releases/v1.2.0/`.

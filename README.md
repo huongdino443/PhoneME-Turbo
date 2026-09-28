@@ -1,78 +1,80 @@
 # PhoneME-Turbo
 
-**PhoneME-Turbo** là dự án PhoneME-MOD cho Android, bắt đầu từ APK PhoneME sơ khai `be.preuveneers.phoneme.fpmidp` do người dùng cung cấp làm nền tham chiếu chung. Từ nền này, dự án được phát triển thành hai bản phát hành: **PhoneME-Turbo** theo hướng HEAP32M và **PhoneME-Turbo(nHD)** theo hướng HEAP64M. Bản 1.1.4 giữ các cải tiến ổn định, Unicode tiếng Việt, File Manager tích hợp, giao diện LCDUI dark theme và hoạt động mạng tốt hơn khi đa nhiệm.
+**PhoneME-Turbo** là bản PhoneME-MOD cho Android, phát triển từ APK PhoneME `be.preuveneers.phoneme.fpmidp` và các patch APK-level của dự án. Repository này hiện được tổ chức theo **một dòng phát hành duy nhất**: **PhoneME-Turbo 1.2.0**, với lineage trực tiếp từ **PhoneME-Turbo nHD 1.1.2** qua các mốc v337–v340.
 
-> Đây là dự án cộng đồng và là các APK đã được chỉnh sửa từ PhoneME. Hãy sao lưu dữ liệu trước khi cài đặt, chỉ cài APK từ nguồn mà bạn tin cậy và tự chịu trách nhiệm về việc sử dụng trên thiết bị của mình.
+Bản HEAP32M/HEAP64M và cách gọi Turbo thường/nHD là các mốc lịch sử của quá trình phát triển. Nhánh HEAP32M/Turbo thường dừng ở 1.1.4; v1.2.0 không phải binary trộn từ 1.1.4 mà là bản tiếp nối dòng nHD/HEAP64M 1.1.2. Repository không còn trình bày hai dòng phát hành song song.
 
-## Tải xuống
+> Đây là dự án cộng đồng và các APK được chỉnh sửa/phân phối lại từ PhoneME. Hãy sao lưu dữ liệu trước khi cài, tải file từ nguồn tin cậy và tự chịu trách nhiệm về việc sử dụng trên thiết bị của mình.
 
-APK Turbo 1.1.4 và mã SHA-256 được công bố trong [GitHub Release v1.1.4](https://github.com/huongdino443/PhoneME-Turbo/releases/tag/v1.1.4).
+## Bản phát hành hiện tại
 
-| Bản | Thiết bị mục tiêu | minSdk / targetSdk | SHA-256 |
-|---|---|---:|---|
-| `PhoneME-Turbo-1.1.4.apk` | Android đời thấp, cấu hình khiêm tốn | 8 / 8 | `d5fc5b06bc74727537b33fc3ee446f002dce2f43d56c197f6d05b1e0a210424e` |
-| `PhoneME-Turbo-nHD-1.1.2.apk` | Android mới hơn, màn hình nHD hoặc độ phân giải cao | 18 / 22 | `51e60854b35955e0ce30bbd4e2cfd699c7da575b858127cd7f966075ec5d9aec` |
+| Mục | Giá trị |
+|---|---|
+| Phiên bản | **1.2.0** |
+| APK | [`releases/v1.2.0/PhoneME-Turbo-1.2.0.apk`](releases/v1.2.0/PhoneME-Turbo-1.2.0.apk) |
+| Version code | `10` |
+| Package | `be.preuveneers.phoneme.fpmidp` |
+| SHA-256 APK | `51a83ec158dbcf38ddbab4e3e9ca73d60519a57180917b80a2a626e7272bd55a` |
+| Certificate SHA-256 | `1C:7E:35:CC:46:1E:96:1C:CA:67:5B:E8:C2:33:05:91:11:D4:75:59:0A:4E:01:55:E3:77:A9:CB:86:6B:A0:17` |
 
-Bản Turbo 1.1.4 là bản phát hành stable hiện tại cho thiết bị Android cũ; bản nHD vẫn được phát hành riêng cho thiết bị Android mới và màn hình độ phân giải cao.
+Tài liệu đầy đủ của release nằm trong [`releases/v1.2.0/`](releases/v1.2.0/), gồm APK, checksum, verification report, notices và tài nguyên source/provenance.
 
-Ở bản 1.1.4, bản Turbo tiếp tục duy trì khả năng cài đặt trên Android 2.3 bằng quy trình ký tương thích gồm v1, v2 và v3 với cùng release certificate. Bản này cũng bổ sung giao diện LCDUI theo dark theme. Cả hai bản có File Manager tích hợp, giúp chọn, tìm kiếm và sắp xếp file JAR/JAD ngay trong ứng dụng.
+## Thay đổi chính trong 1.2.0
 
-## Tính năng chính
+- Điều khiển riêng theo từng game: gamepad J2ME, key mapping và tùy chọn display/touch/GL/Canvas theo MIDlet.
+- EdgeSwipe với Exit, Settings, Virtual Keyboard và Gamepad.
+- Bàn phím launcher chạy dạng overlay thay vì làm co vùng nội dung.
+- Cải thiện touch pass-through quanh gamepad và vùng ngoài framebuffer.
+- Điều chỉnh EdgeSwipe cho màn hình nhỏ tới nhóm kích thước nHD.
+- Xử lý lại layout launcher sau xoay màn hình và giữ runtime/GL theo chính sách hiện có.
+- Bổ sung có chọn lọc một số Nokia API shim và xử lý một số class/JAR cũ bằng bản sao suite riêng.
+- Cải thiện LCDUI menu nhiều mục, scrolling và giao diện LCDUI dark theme.
 
-So với APK PhoneME sơ khai dùng làm nền tham chiếu, PhoneME-Turbo có giao diện danh sách game dạng lưới, tối ưu cho cả màn hình dọc và ngang. Game mới cài được đưa lên đầu danh sách, và game Java có thể được cài trực tiếp bằng file `.jar` mà không cần chuẩn bị thêm file `.jad`. Ô nhập đường dẫn được giữ trên một dòng để tránh xuống dòng ngoài ý muốn.
+Chi tiết song ngữ nằm trong [`releases/v1.2.0/CHANGELOG.md`](releases/v1.2.0/CHANGELOG.md).
 
-Phần nhập liệu được gia cố để xử lý tốt hơn bàn phím ảo, bàn phím vật lý, trạng thái Shift/Alt, xóa, xuống dòng và Telex. Native Unicode bridge cho phép chuyển các ký tự BMP tiếng Việt mở rộng như `ă`, `ạ`, `ư`, `đ`, `â`, `ê` và `ô` vào CVM theo giao thức key event 16-bit của PhoneME.
+Bản phát hành **không tuyên bố** bổ sung tổng quát cho MMAPI music playback, tự động chuyển playlist hoặc M3G rendering.
 
-Bản Turbo thường duy trì khả năng tương thích với Android cũ ở `minSdkVersion 8` và `targetSdkVersion 8`, đồng thời thu nhỏ font game khoảng 66% để bố cục gọn hơn. Bản nHD phát triển theo hướng HEAP64M, có lớp OpenGL/co giãn hình ảnh phù hợp màn hình nHD và yêu cầu Android mới hơn với `minSdkVersion 18`, `targetSdkVersion 22`. Hai bản đã tích hợp các thay đổi về vòng đời dịch vụ nhằm giúp game online giữ hoạt động mạng tốt hơn khi người dùng chuyển sang ứng dụng khác; kết quả thực tế vẫn có thể phụ thuộc vào thiết bị, hệ điều hành và máy chủ game.
+## Cài đặt và nâng cấp
 
-Logging mặc định được tiết chế, chỉ giữ lại các thông tin cần thiết cho hoạt động và chẩn đoán khi bật chế độ phù hợp. Pipeline audio và các guard vòng đời được giữ ở mức thận trọng để giảm nguy cơ treo hoặc crash trong quá trình sử dụng.
+1. Sao lưu game, RMS và dữ liệu quan trọng.
+2. Kiểm tra SHA-256 của APK nếu file được tải qua kênh khác.
+3. Nếu Android báo xung đột chữ ký, gỡ bản cũ trước khi cài. Việc gỡ ứng dụng có thể xóa dữ liệu private của app.
+4. Các APK 1.2.0 được ký bằng certificate phát hành mới trong bundle; chỉ các bản dùng cùng certificate mới cập nhật trực tiếp cho nhau.
+5. Sau khi cài, dùng File Manager trong app để chọn JAR/JAD và kiểm tra quyền truy cập theo Android/thiết bị.
 
-## Cài đặt
+Việc đổi version metadata của 1.2.0 đã được kiểm tra bằng ZIP integrity, DEX/payload comparison và signature verification. Đây không phải là một vòng physical-device test mới riêng cho thao tác đổi version; đọc [`BUILD_VERIFICATION.md`](releases/v1.2.0/BUILD_VERIFICATION.md).
 
-Trước khi cài, hãy gỡ hoặc sao lưu bản PhoneME cũ nếu thiết bị báo xung đột chữ ký. Tải đúng APK từ Release, kiểm tra SHA-256 nếu cần, bật quyền cài ứng dụng từ nguồn phù hợp trên thiết bị, sau đó mở APK và hoàn tất cài đặt. Khi nâng cấp, nên giữ cùng một package và ký hiệu APK; nếu Android báo gói không hợp lệ, hãy kiểm tra lại file tải xuống và bản Android có đáp ứng `minSdk` hay không.
+## Source và khả năng tái tạo
 
-Sau khi mở ứng dụng, dùng chức năng cài game để chọn file `.jar`. Với game online, nên thử riêng Wi‑Fi và dữ liệu di động; trên Android đời cao, có thể cần cho phép PhoneME-Turbo chạy nền và tắt tối ưu pin cho ứng dụng nếu hệ thống tự ngắt mạng.
+Bundle source công khai là **APK-level patch/recovery source**, không phải toàn bộ source tree của Turbo CVM. Nó gồm:
+
+- Baseline unsigned v340 dùng làm input chính xác cho release 1.2.0.
+- Script đổi version metadata và kiểm tra DEX/payload.
+- Các script lineage v337–v340 để review provenance.
+- Build notes và source-scope declaration.
+
+Không có trong repository: private signing key, keystore, mật khẩu, full Turbo CVM/native build graph, ROMizer hoàn chỉnh hoặc toàn bộ input lịch sử cần để dựng lại v340 từ đầu. Không nên hiểu các script lineage là một quy trình from-source hoàn chỉnh.
+
+Xem [`releases/v1.2.0/SOURCE/BUILDING.md`](releases/v1.2.0/SOURCE/BUILDING.md) và [`releases/v1.2.0/SOURCE/SOURCE_SCOPE.md`](releases/v1.2.0/SOURCE/SOURCE_SCOPE.md).
 
 ## Cấu trúc repository
 
-| Thư mục | Nội dung |
+| Đường dẫn | Nội dung |
 |---|---|
-| `scripts/` | Các patch script đã làm sạch đường dẫn, không chứa keystore hoặc lệnh ký APK |
-| `docs/` | Báo cáo kỹ thuật về Unicode bridge, input và các thay đổi tương thích |
-| `releases/` | Ghi chú về hai APK được phát hành dưới GitHub Releases |
-| `CHANGELOG.md` | Changelog ở mức người dùng và kỹ thuật cần thiết |
+| `releases/v1.2.0/` | Snapshot phát hành duy nhất hiện tại: APK, source, notices, checksum và verification. |
+| `docs/` | Tài liệu kỹ thuật và các assessment lịch sử cần giữ để tham khảo. |
+| `scripts/` | Script patch lịch sử từ các phiên bản trước; không phải release pipeline 1.2.0. |
+| `CHANGELOG.md` | Lịch sử phát hành và thay đổi ở mức dự án. |
+| `NOTICE.md` | Ghi chú license/provenance ở cấp repository. |
 
-Repository **không** chứa workspace giải mã đầy đủ, file tạm, log cá nhân, khóa ký, mật khẩu hoặc APK unsigned. Các patch script cần một cây PhoneME đã giải mã và các công cụ Android tương ứng; chúng không tự tải hay chứa các thành phần nền gốc có bản quyền.
+Các file lịch sử ngoài `releases/v1.2.0/` được giữ để provenance, không được ưu tiên hơn tài liệu và artifact 1.2.0.
 
-## Xây dựng và patch
+## Giấy phép và provenance
 
-Các script trong `scripts/` được thiết kế theo nguyên tắc fail-closed: kiểm tra nền đầu vào, thay đổi tối thiểu và dừng nếu cấu trúc smali/ELF không khớp. Quy trình tổng quát là giải mã APK nền, áp dụng patch, build lại bằng apktool, zipalign, ký bằng **keystore riêng của người xây dựng** và xác minh bằng `apksigner`. Keystore không được lưu trong repository.
+PhoneME-Turbo là bản mod/phân phối lại phục vụ nghiên cứu và sử dụng cá nhân. PhoneME, Android và thư viện liên quan vẫn chịu license tương ứng. Đọc [`releases/v1.2.0/NOTICES/`](releases/v1.2.0/NOTICES/) trước khi tái phân phối hoặc sử dụng thương mại.
 
-Patch native phụ thuộc vào đúng bố cục ELF của nền PhoneME tương ứng. Hãy đọc tài liệu trong `docs/` trước khi chạy trên một nền khác và luôn tạo bản sao lưu của APK/cây giải mã trước khi patch.
+## Liên kết
 
-## Trạng thái phát hành
-
-`v1.1.4` là bản stable hiện tại của PhoneME-Turbo. Bản phát hành đã được build, zipalign, ký theo quy trình tương thích Android 2.3 với v1/v2/v3 và kiểm tra trước khi public. Một số game có cách loop âm thanh riêng và có thể cho kết quả khác nhau theo thiết bị, vì vậy bản phát hành không tuyên bố mọi game đều có cùng hành vi âm thanh.
-
-## Nền tham chiếu
-
-APK sơ khai được dùng làm điểm xuất phát có các thông tin đã kiểm tra như sau:
-
-| Thuộc tính | Giá trị |
-|---|---|
-| Tên file tham chiếu | `be.preuveneers.phoneme.fpmidp--1.apk` |
-| Package | `be.preuveneers.phoneme.fpmidp` |
-| Version | `1.0.0` (`versionCode=1`) |
-| minSdk / targetSdk | `8 / 8` |
-| SHA-256 | `1d02bc4de2730a7255c49bddd3f9d784c7dc52d4795840c7e1dcc401e739a185` |
-
-APK này là nền sơ khai được người dùng cung cấp để đối chiếu. Trong lịch sử phát triển của repository, HEAP32M và HEAP64M là hai hướng phát triển từ cùng nền đó.
-
-## Giấy phép và nguồn gốc
-
-PhoneME-Turbo là một bản mod/phân phối lại phục vụ mục đích nghiên cứu và sử dụng cá nhân. Các thành phần nguồn gốc PhoneME, Android và thư viện liên quan vẫn chịu giấy phép tương ứng của chúng. Repository này chỉ công bố patch, quy trình và artifact phát hành cần thiết; hãy kiểm tra giấy phép của thành phần gốc trước khi tái phân phối hoặc sử dụng thương mại.
-
-## Tài liệu tham khảo
-
-[1]: https://developer.android.com/guide/topics/manifest/uses-sdk "Android Developers — <uses-sdk> manifest element"
-[2]: https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases "GitHub Docs — About releases"
+- [GitHub Releases](https://github.com/huongdino443/PhoneME-Turbo/releases)
+- [PhoneME upstream](https://github.com/magicus/phoneME)
+- [Tài liệu kỹ thuật](docs/README.md)

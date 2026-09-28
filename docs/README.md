@@ -1,10 +1,12 @@
-# Kỹ thuật
+# Tài liệu kỹ thuật
 
-Thư mục này chứa các báo cáo về phạm vi patch, input Unicode, vòng đời ứng dụng và kiểm tra đầu ra của hai APK PhoneME-Turbo phát hành cuối. Báo cáo mô tả các thay đổi ở mức có thể tái hiện, nhưng không chứa keystore, mật khẩu, log cá nhân hoặc toàn bộ cây giải mã PhoneME.
+Thư mục này chứa các báo cáo kỹ thuật và provenance của PhoneME Turbo. Bản phát hành hiện tại là **PhoneME Turbo 1.2.0**, phát triển từ dòng lịch sử 1.1.2 qua các mốc v337–v340. Các tài liệu cũ có thể còn dùng tên nHD/HEAP64M để mô tả baseline, nhưng đó không phải tên sản phẩm hiện tại.
 
-Các offset native chỉ áp dụng cho đúng nền ELF đã kiểm tra trong dự án. Không nên áp dụng trực tiếp lên một APK khác nếu chưa xác minh kích thước chunk, branch site và vùng helper.
+## Báo cáo chính
 
-## Báo cáo tương thích
+- [Đối chiếu v1.2.0 với 1.1.2](V1.2.0-VS-1.1.2-AUDIT.md)
+- [Đánh giá khả năng dùng source phoneME Sun cho tương thích Turbo](PhoneME-Sun-Turbo-general-compatibility.md)
+- [Native Unicode/InputFix7](PhoneME-InputFix7-NativeUnicode.md)
+- [Tài liệu tương thích lịch sử](PhoneME-Turbo-compatibility.md)
 
-- [Đánh giá khả năng dùng source phoneME Sun để mở rộng tương thích Turbo](PhoneME-Sun-Turbo-general-compatibility.md)
-- SHA-256: `b6e40c3bdcf13c90d1f877fb6acf513c3f049de5ae6815b8e2961ee35960e72d`
+Các offset native chỉ áp dụng cho đúng nền ELF đã kiểm tra. Không áp dụng trực tiếp lên APK khác nếu chưa xác minh chunk, branch site và vùng helper. Repository không chứa full Turbo CVM/native build tree hoặc private signing key.
