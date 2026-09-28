@@ -1,8 +1,8 @@
-# PhoneME-Turbo
+# PhoneME Turbo
 
-**PhoneME-Turbo** là bản PhoneME-MOD cho Android, phát triển từ APK PhoneME `be.preuveneers.phoneme.fpmidp` và các patch APK-level của dự án. Repository này hiện được tổ chức theo **một dòng phát hành duy nhất**: **PhoneME-Turbo 1.2.0**, với lineage trực tiếp từ **PhoneME-Turbo nHD 1.1.2** qua các mốc v337–v340.
+**PhoneME Turbo** là một trình giả lập Java ME dành cho Android, cho phép chạy các ứng dụng và trò chơi Java ME thông qua tệp JAD/JAR. Dự án được phát triển mở rộng từ một APK PhoneME nguyên thủy, với mục tiêu cải thiện khả năng tương thích, giao diện, điều khiển và trải nghiệm sử dụng trên nhiều thiết bị Android.
 
-Bản HEAP32M/HEAP64M và cách gọi Turbo thường/nHD là các mốc lịch sử của quá trình phát triển. Nhánh HEAP32M/Turbo thường dừng ở 1.1.4; v1.2.0 không phải binary trộn từ 1.1.4 mà là bản tiếp nối dòng nHD/HEAP64M 1.1.2. Repository không còn trình bày hai dòng phát hành song song.
+Repository này lưu trữ các bản phát hành, tài liệu kỹ thuật và những thành phần cần thiết để nghiên cứu, đánh giá và tiếp tục phát triển PhoneME Turbo.
 
 > Đây là dự án cộng đồng và các APK được chỉnh sửa/phân phối lại từ PhoneME. Hãy sao lưu dữ liệu trước khi cài, tải file từ nguồn tin cậy và tự chịu trách nhiệm về việc sử dụng trên thiết bị của mình.
 
@@ -25,7 +25,7 @@ Tài liệu đầy đủ của release nằm trong [`releases/v1.2.0/`](releases
 - EdgeSwipe với Exit, Settings, Virtual Keyboard và Gamepad.
 - Bàn phím launcher chạy dạng overlay thay vì làm co vùng nội dung.
 - Cải thiện touch pass-through quanh gamepad và vùng ngoài framebuffer.
-- Điều chỉnh EdgeSwipe cho màn hình nhỏ tới nhóm kích thước nHD.
+- Điều chỉnh EdgeSwipe cho màn hình nhỏ và nhiều tỷ lệ hiển thị.
 - Xử lý lại layout launcher sau xoay màn hình và giữ runtime/GL theo chính sách hiện có.
 - Bổ sung có chọn lọc một số Nokia API shim và xử lý một số class/JAR cũ bằng bản sao suite riêng.
 - Cải thiện LCDUI menu nhiều mục, scrolling và giao diện LCDUI dark theme.
@@ -71,7 +71,7 @@ Các file lịch sử ngoài `releases/v1.2.0/` được giữ để provenance,
 
 ## Giấy phép và provenance
 
-PhoneME-Turbo là bản mod/phân phối lại phục vụ nghiên cứu và sử dụng cá nhân. PhoneME, Android và thư viện liên quan vẫn chịu license tương ứng. Đọc [`releases/v1.2.0/NOTICES/`](releases/v1.2.0/NOTICES/) trước khi tái phân phối hoặc sử dụng thương mại.
+PhoneME Turbo là một dự án phát triển mở rộng dựa trên PhoneME, phục vụ nghiên cứu và sử dụng cá nhân. PhoneME, Android và các thư viện liên quan vẫn chịu license tương ứng. Đọc [`releases/v1.2.0/NOTICES/`](releases/v1.2.0/NOTICES/) trước khi tái phân phối hoặc sử dụng thương mại.
 
 ## Liên kết
 
