@@ -1,6 +1,6 @@
 # PhoneME Turbo
 
-**PhoneME Turbo** là một trình giả lập Java ME dành cho Android, cho phép chạy các ứng dụng và trò chơi Java ME thông qua tệp JAD/JAR. Dự án được phát triển mở rộng từ APK PhoneME nguyên thủy do **Davy Preuveneers** phát triển, với mục tiêu cải thiện khả năng tương thích, giao diện, điều khiển và trải nghiệm sử dụng trên nhiều thiết bị Android.
+**PhoneME Turbo** là một trình giả lập Java ME dành cho Android, cho phép chạy các ứng dụng và trò chơi Java ME thông qua tệp JAD/JAR. Dự án được phát triển mở rộng từ một biến thể APK **PhoneME Advanced** nguyên thủy do **Davy Preuveneers** phát triển, với mục tiêu cải thiện khả năng tương thích game, giao diện, điều khiển và trải nghiệm sử dụng trên nhiều thiết bị Android.
 
 Repository này lưu trữ các bản phát hành, tài liệu kỹ thuật và những thành phần cần thiết để nghiên cứu, đánh giá và tiếp tục phát triển PhoneME Turbo.
 
