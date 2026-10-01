@@ -1,39 +1,38 @@
-# PhoneME-Turbo changelog
+# PhoneME Turbo changelog
 
-## 1.2.0 — bản phát hành chính hiện tại
+## 1.2.1 — bản cập nhật mới nhất
 
-Bản 1.2.0 là dòng phát hành chính duy nhất hiện tại của repository và được phát triển từ **PhoneME-Turbo nHD 1.1.2** theo lineage v337–v340. Đây không phải là bản trộn binary giữa Turbo thường 1.1.4 và nHD 1.1.2.
+PhoneME Turbo 1.2.1 tiếp tục phát triển từ bản 1.2.0, tập trung vào xử lý bitmap font, gỡ game, import JAR và quản lý cache.
 
 ### Thay đổi chính
 
-- Điều khiển riêng theo từng game với gamepad J2ME, key mapping và tùy chọn display/touch/GL/Canvas.
-- EdgeSwipe có Exit, Settings, Virtual Keyboard và Gamepad.
-- Bàn phím launcher hiển thị dạng overlay, không làm co vùng nội dung.
-- Cải thiện touch pass-through quanh gamepad và vùng ngoài framebuffer.
-- Điều chỉnh EdgeSwipe cho màn hình nhỏ tới nhóm nHD.
-- Xử lý lại layout launcher sau xoay màn hình và duy trì runtime/GL theo chính sách của ứng dụng.
-- Bổ sung có chọn lọc Nokia API shim và xử lý class/JAR cũ bằng bản sao suite riêng khi cần.
-- Cải thiện LCDUI menu nhiều mục, scrolling và dark theme.
+- Cập nhật một glyph trong atlas CoreBridge, giữ nguyên kích thước atlas và kênh alpha RGBA.
+- Sửa luồng gỡ game để chỉ dọn dữ liệu thuộc game được chọn, không xóa RMS hoặc JAR nguồn bên ngoài ứng dụng.
+- Sửa lỗi crash trong quá trình dọn dẹp game.
+- Hỗ trợ import JAR nguồn và export có xét đến bản cache.
+- Cải thiện xử lý đường dẫn JAD và URI `file://`.
+- Tái sử dụng JAR đã chuẩn hóa khi hợp lệ và kiểm tra cache sau bước chuẩn hóa EXIF.
+- Dọn cả WMA cache phát sinh từ JAR đã chuẩn hóa EXIF khi gỡ game.
 
-APK, source/provenance, checksum và verification nằm tại [`releases/v1.2.0/`](releases/v1.2.0/).
+APK, changelog và checksum nằm tại [`releases/v1.2.1/`](releases/v1.2.1/).
 
-### Giới hạn đã biết
+## 1.2.0
 
-Bản 1.2.0 không tuyên bố bổ sung tổng quát cho MMAPI music playback, tự động chuyển playlist hoặc M3G rendering. Hành vi game vẫn có thể khác theo thiết bị, Android version, native capability và server của game.
+Bản 1.2.0 là dòng phát hành chính được phát triển từ **PhoneME Turbo 1.1.2** theo lineage v337–v340. Các thay đổi lớn gồm canvas theo từng game, FrameBuffer/touch routing, EdgeSwipe, gamepad, keyboard overlay, lifecycle Android, Nokia/WMA compatibility bridge, JAR processing và giao diện LCDUI dark theme.
+
+Chi tiết nằm tại [`releases/v1.2.0/CHANGELOG.md`](releases/v1.2.0/CHANGELOG.md).
 
 ## 1.1.4 — mốc cuối của dòng Turbo thường/HEAP32M
 
-1.1.4 là mốc stable cuối của dòng HEAP32M/PhoneME-Turbo đời thấp. Dòng này dừng tại 1.1.4; không được hiểu là nền trực tiếp của binary v1.2.0.
+1.1.4 là mốc stable cuối của dòng HEAP32M/PhoneME Turbo đời thấp. Dòng này dừng tại 1.1.4 và được giữ trong lịch sử để đối chiếu.
 
-Các cải tiến lịch sử gồm giao diện LCDUI dark theme, File Manager tích hợp, Unicode tiếng Việt, native input bridge và các thay đổi lifecycle/network được ghi trong Git history và tài liệu cũ.
+## 1.1.2 — mốc lineage của v1.2.x
 
-## 1.1.2 — mốc lineage trực tiếp của v1.2.0
-
-PhoneME-Turbo nHD 1.1.2 là điểm phát triển trực tiếp của lineage v337–v340 và bản phát hành 1.2.0. Các patch về giao diện, EdgeSwipe, gamepad, lifecycle, Nokia compatibility và layout nHD được tiếp tục xử lý trên dòng này.
+PhoneME Turbo 1.1.2 là điểm phát triển trực tiếp của lineage v337–v340 và các bản 1.2.0, 1.2.1.
 
 ## Các mốc cũ
 
 - `v1.1.3`: phát hành tiếp nối với quy trình ký tương thích legacy.
 - `v1.1.0`: mốc nền trước các thay đổi phát hành sau đó.
 
-Các artifact cũ được giữ trong Git history và tài liệu lịch sử để đối chiếu. Khi cần cài đặt hoặc tiếp tục phát triển, ưu tiên bundle `releases/v1.2.0/`.
+Các artifact cũ được giữ trong Git history và tài liệu lịch sử để đối chiếu. Khi cài đặt hoặc tiếp tục phát triển, ưu tiên bản phát hành mới nhất trong [`releases/`](releases/).

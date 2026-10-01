@@ -1,6 +1,6 @@
 # Tài liệu kỹ thuật
 
-Thư mục này chứa các báo cáo kỹ thuật và provenance của PhoneME Turbo. Bản phát hành hiện tại là **PhoneME Turbo 1.2.0**, phát triển từ dòng lịch sử 1.1.2 qua các mốc v337–v340. Các tài liệu cũ có thể còn dùng tên nHD/HEAP64M để mô tả baseline, nhưng đó không phải tên sản phẩm hiện tại.
+Thư mục này chứa các báo cáo kỹ thuật và provenance của PhoneME Turbo. Bản phát hành hiện tại là **PhoneME Turbo 1.2.1**. Bản 1.2.0 là mốc nền lịch sử được phát triển từ dòng 1.1.2 qua các mốc v337–v340. Các tài liệu cũ có thể còn dùng tên nHD/HEAP64M để mô tả baseline, nhưng đó không phải tên sản phẩm hiện tại.
 
 ## Báo cáo chính
 
