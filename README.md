@@ -8,16 +8,25 @@ Repository này lưu trữ các bản phát hành, tài liệu kỹ thuật và 
 
 ## Bản phát hành hiện tại
 
-| Mục | Giá trị |
-|---|---|
-| Phiên bản | **1.2.1** |
-| APK | [`releases/v1.2.1/PhoneME-Turbo-1.2.1.apk`](releases/v1.2.1/PhoneME-Turbo-1.2.1.apk) |
-| Version code | `26` |
-| Package | `be.preuveneers.phoneme.fpmidp` |
-| SHA-256 APK | `f7e692cede497e0118af04f4b840b735cdbdc4b239cdeff13b996cc634973f6f` |
-| Certificate SHA-256 | `1C:7E:35:CC:46:1E:96:1C:CA:67:5B:E8:C2:33:05:91:11:D4:75:59:0A:4E:01:55:E3:77:A9:CB:86:6B:A0:17` |
+**PhoneME Turbo 1.2.2** được phát hành với hai APK cùng dòng phiên bản:
 
-Tài liệu của release nằm trong [`releases/v1.2.1/`](releases/v1.2.1/), gồm APK release-signed, changelog và checksum. Bản unsigned không được phân phối.
+| Biến thể | APK | Version code | Minimum SDK | SHA-256 |
+|---|---|---:|---:|---|
+| Tiêu chuẩn | [`PhoneME-Turbo-1.2.2.apk`](releases/v1.2.2/PhoneME-Turbo-1.2.2.apk) | `27` | `18` | `f7785cc2cc7349251c742878c374a15323949d59261f4d4dc3dd61c74b47efac` |
+| API 8 | [`PhoneME-Turbo-1.2.2-api8.apk`](releases/v1.2.2/PhoneME-Turbo-1.2.2-api8.apk) | `44` | `8` | `aeefbc73800a5f84c24bc7f1d26b893148b7ceca2881b71b39f56f105d896e62` |
+
+Cả hai APK dùng package `be.preuveneers.phoneme.fpmidp`, target SDK `22`, native ABI `armeabi` và cùng certificate phát hành PhoneME Turbo. Tài liệu release nằm trong [`releases/v1.2.2/`](releases/v1.2.2/). Bản unsigned không được phân phối.
+
+## Thay đổi chính trong 1.2.2
+
+- Bổ sung công tắc FPS và bộ đếm frame tại điểm gửi khung hình lên GL/HD.
+- Hiển thị badge FPS 8dp trên lớp Android phía trên GL, co giãn theo mật độ màn hình.
+- Giữ nguyên đường Canvas cũ để không thay đổi cách vẽ FPS trên thiết bị dùng Canvas.
+- Tích hợp kích thước thật theo từng game, đồng bộ hình ảnh/vùng chạm và ba bố cục gamepad.
+- Giữ bitmap-font preference và ẩn các hàng cài đặt monitor/camera không cần cho game.
+- Bổ sung biến thể API 8 / Android 2.2 với xử lý title bar tương thích API thấp.
+
+Chi tiết nằm trong [`releases/v1.2.2/CHANGELOG.md`](releases/v1.2.2/CHANGELOG.md).
 
 ## Thay đổi chính trong 1.2.1
 
@@ -48,10 +57,10 @@ Bản phát hành **không tuyên bố** bổ sung tổng quát cho MMAPI music 
 1. Sao lưu game, RMS và dữ liệu quan trọng.
 2. Kiểm tra SHA-256 của APK nếu file được tải qua kênh khác.
 3. Nếu Android báo xung đột chữ ký, gỡ bản cũ trước khi cài. Việc gỡ ứng dụng có thể xóa dữ liệu private của app.
-4. Bản 1.2.1 sử dụng cùng certificate phát hành với PhoneME Turbo 1.2.0-15; các bản dùng cùng certificate có thể cập nhật trực tiếp cho nhau.
+4. Hai APK 1.2.2 sử dụng cùng certificate phát hành PhoneME Turbo; hãy chọn biến thể phù hợp với API Android của thiết bị.
 5. Sau khi cài, dùng File Manager trong app để chọn JAR/JAD và kiểm tra quyền truy cập theo Android/thiết bị.
 
-Chữ ký và tính toàn vẹn ZIP của APK 1.2.1 đã được kiểm tra. Việc hiển thị glyph mới trên thiết bị thực tế chưa được kiểm tra trong release này.
+Chữ ký và tính toàn vẹn ZIP của cả hai APK 1.2.2 đã được kiểm tra. Bản API 8 giữ minimum SDK 8 để hỗ trợ Android 2.2.
 
 ## Source và khả năng tái tạo
 
@@ -70,14 +79,14 @@ Xem [`releases/v1.2.0/SOURCE/BUILDING.md`](releases/v1.2.0/SOURCE/BUILDING.md) v
 
 | Đường dẫn | Nội dung |
 |---|---|
-| `releases/v1.2.1/` | Snapshot phát hành mới nhất: APK release-signed, changelog và checksum. |
+| `releases/v1.2.2/` | Snapshot phát hành mới nhất: hai APK release-signed, changelog và checksum. |
 | `releases/v1.2.0/` | Snapshot lịch sử: APK, source, notices, checksum và verification. |
 | `docs/` | Tài liệu kỹ thuật và các assessment lịch sử cần giữ để tham khảo. |
 | `scripts/` | Script patch lịch sử từ các phiên bản trước; không phải release pipeline 1.2.0. |
 | `CHANGELOG.md` | Lịch sử phát hành và thay đổi ở mức dự án. |
 | `NOTICE.md` | Ghi chú license/provenance ở cấp repository. |
 
-Các file lịch sử ngoài `releases/v1.2.1/` được giữ để provenance; khi cài đặt, ưu tiên artifact 1.2.1.
+Các file lịch sử ngoài `releases/v1.2.2/` được giữ để provenance; khi cài đặt, ưu tiên biến thể 1.2.2 phù hợp với thiết bị.
 
 ## Giấy phép và provenance
 

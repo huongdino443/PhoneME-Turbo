@@ -1,6 +1,21 @@
 # PhoneME Turbo changelog
 
-## 1.2.1 — bản cập nhật mới nhất
+## 1.2.2 — bản phát hành hiện tại
+
+PhoneME Turbo 1.2.2 gồm bản tiêu chuẩn cho Android API 18 trở lên và bản API 8 dành cho Android 2.2 trở lên.
+
+### Thay đổi chính
+
+- Thêm công tắc FPS và bộ đếm frame tại điểm gửi khung hình lên GL/HD.
+- Thêm badge FPS 8dp trên lớp Android phía trên GL, co giãn theo mật độ màn hình.
+- Giữ nguyên đường Canvas cũ và cách vẽ FPS hiện có trên thiết bị dùng Canvas.
+- Tích hợp kích thước thật theo từng game, đồng bộ hình ảnh/vùng chạm và ba bố cục gamepad.
+- Giữ bitmap-font preference và ẩn các hàng cài đặt monitor/camera không cần cho game.
+- Bổ sung biến thể API 8 / Android 2.2 với xử lý title bar tương thích API thấp.
+
+Chi tiết và checksum nằm tại [`releases/v1.2.2/`](releases/v1.2.2/).
+
+## 1.2.1 — bản cập nhật trước đó
 
 PhoneME Turbo 1.2.1 tiếp tục phát triển từ bản 1.2.0, tập trung vào xử lý bitmap font, gỡ game, import JAR và quản lý cache.
 

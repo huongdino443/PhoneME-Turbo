@@ -1,12 +1,10 @@
 # Release artifacts
 
-Bản phát hành mới nhất của repository là **PhoneME Turbo 1.2.1**. Đây là bản cập nhật tiếp theo của PhoneME Turbo 1.2.0, với các cải tiến về bitmap font, gỡ game, import JAR và quản lý cache.
+Bản phát hành mới nhất của repository là **PhoneME Turbo 1.2.2**, gồm hai APK signed cho các mức API Android khác nhau.
 
-| Bản | File | SHA-256 |
-|---|---|---|
-| PhoneME Turbo 1.2.1 | [`v1.2.1/PhoneME-Turbo-1.2.1.apk`](v1.2.1/PhoneME-Turbo-1.2.1.apk) | `f7e692cede497e0118af04f4b840b735cdbdc4b239cdeff13b996cc634973f6f` |
-| PhoneME Turbo 1.2.0 | [`v1.2.0/PhoneME-Turbo-1.2.0.apk`](v1.2.0/PhoneME-Turbo-1.2.0.apk) | `51a83ec158dbcf38ddbab4e3e9ca73d60519a57180917b80a2a626e7272bd55a` |
+| Biến thể | File | Minimum SDK | SHA-256 |
+|---|---|---:|---|
+| Tiêu chuẩn | [`v1.2.2/PhoneME-Turbo-1.2.2.apk`](v1.2.2/PhoneME-Turbo-1.2.2.apk) | `18` | `f7785cc2cc7349251c742878c374a15323949d59261f4d4dc3dd61c74b47efac` |
+| API 8 | [`v1.2.2/PhoneME-Turbo-1.2.2-api8.apk`](v1.2.2/PhoneME-Turbo-1.2.2-api8.apk) | `8` | `aeefbc73800a5f84c24bc7f1d26b893148b7ceca2881b71b39f56f105d896e62` |
 
-Bundle release 1.2.1 gồm APK release-signed, changelog và checksum trong [`v1.2.1/`](v1.2.1/). Bản unsigned không được phân phối. Không commit private keystore hoặc mật khẩu ký APK.
-
-Các release 1.1.x được giữ trong Git history và tài liệu lịch sử để đối chiếu.
+Bundle release 1.2.2 gồm hai APK release-signed, changelog và checksum trong [`v1.2.2/`](v1.2.2/). Bản unsigned không được phân phối. Các release 1.1.x và 1.2.0–1.2.1 được giữ để đối chiếu lịch sử.
