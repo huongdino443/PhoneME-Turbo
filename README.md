@@ -8,11 +8,11 @@ Repository này lưu trữ các bản phát hành, tài liệu kỹ thuật và 
 
 ## PhoneME Converter — xử lý lỗi VerifyError
 
-Nếu game Java ME không khởi động trên PhoneME Turbo và log xuất hiện `VerifyError`, `bad typematch`, lỗi StackMap hoặc lỗi xác minh class tương tự, bạn có thể thử [PhoneME Converter](tools/phoneme-converter/). Đây là công cụ chuẩn hóa và kiểm tra JAR chạy trực tiếp trong trình duyệt; JAR được xử lý cục bộ và không được tải lên máy chủ.
+Nếu game Java ME không khởi động trên PhoneME Turbo và log xuất hiện `VerifyError`, `bad typematch`, lỗi StackMap hoặc lỗi xác minh class tương tự, bạn có thể thử [PhoneME Converter](https://huongdino443.github.io/PhoneME-Turbo/tools/phoneme-converter/). Đây là công cụ chuẩn hóa và kiểm tra JAR chạy trực tiếp trong trình duyệt; JAR được xử lý cục bộ và không được tải lên máy chủ.
 
 Đây **không phải bước bắt buộc cho mọi game** và không sửa được mọi lỗi runtime, lỗi API còn thiếu, lỗi mạng hoặc lỗi logic riêng của game. Công cụ chỉ nhận file `.jar` tối đa 64 MB, không nhận `.jad` hay APK. Hãy giữ lại JAR gốc, đọc báo cáo JSON và kiểm tra kết quả trước khi cài. Nếu JAR đã ký bị thay đổi, chữ ký cũ sẽ không còn khớp.
 
-**Mở công cụ:** [PhoneME Converter trên GitHub Pages](https://huongdino443.github.io/PhoneME-Turbo/tools/phoneme-converter/) · [Hướng dẫn và giới hạn](tools/phoneme-converter/README.md)
+Đọc thêm [hướng dẫn và giới hạn của PhoneME Converter](tools/phoneme-converter/README.md) trước khi sử dụng.
 
 ## Bản phát hành hiện tại
 
