@@ -6,6 +6,14 @@ Repository này lưu trữ các bản phát hành, tài liệu kỹ thuật và 
 
 > Đây là dự án cộng đồng và các APK được chỉnh sửa/phân phối lại từ PhoneME. Hãy sao lưu dữ liệu trước khi cài, tải file từ nguồn tin cậy và tự chịu trách nhiệm về việc sử dụng trên thiết bị của mình.
 
+## PhoneME Converter — xử lý lỗi VerifyError
+
+Nếu game Java ME không khởi động trên PhoneME Turbo và log xuất hiện `VerifyError`, `bad typematch`, lỗi StackMap hoặc lỗi xác minh class tương tự, bạn có thể thử [PhoneME Converter](tools/phoneme-converter/). Đây là công cụ chuẩn hóa và kiểm tra JAR chạy trực tiếp trong trình duyệt; JAR được xử lý cục bộ và không được tải lên máy chủ.
+
+Đây **không phải bước bắt buộc cho mọi game** và không sửa được mọi lỗi runtime, lỗi API còn thiếu, lỗi mạng hoặc lỗi logic riêng của game. Công cụ chỉ nhận file `.jar` tối đa 64 MB, không nhận `.jad` hay APK. Hãy giữ lại JAR gốc, đọc báo cáo JSON và kiểm tra kết quả trước khi cài. Nếu JAR đã ký bị thay đổi, chữ ký cũ sẽ không còn khớp.
+
+**Mở công cụ:** [PhoneME Converter trên GitHub Pages](https://huongdino443.github.io/PhoneME-Turbo/tools/phoneme-converter/) · [Hướng dẫn và giới hạn](tools/phoneme-converter/README.md)
+
 ## Bản phát hành hiện tại
 
 **PhoneME Turbo 1.2.2** được phát hành với hai APK cùng dòng phiên bản:
@@ -82,6 +90,7 @@ Xem [`releases/v1.2.0/SOURCE/BUILDING.md`](releases/v1.2.0/SOURCE/BUILDING.md) v
 | `releases/v1.2.2/` | Snapshot phát hành mới nhất: hai APK release-signed, changelog và checksum. |
 | `releases/v1.2.0/` | Snapshot lịch sử: APK, source, notices, checksum và verification. |
 | `docs/` | Tài liệu kỹ thuật và các assessment lịch sử cần giữ để tham khảo. |
+| `tools/phoneme-converter/` | Công cụ web độc lập để kiểm tra và chuẩn hóa JAR Java ME gặp lỗi xác minh trên PhoneME Turbo. |
 | `scripts/` | Script patch lịch sử từ các phiên bản trước; không phải release pipeline 1.2.0. |
 | `CHANGELOG.md` | Lịch sử phát hành và thay đổi ở mức dự án. |
 | `NOTICE.md` | Ghi chú license/provenance ở cấp repository. |
