@@ -21,7 +21,7 @@ Nếu game Java ME không khởi động trên PhoneME Turbo và log xuất hi�
 | Biến thể | APK | Version code | Minimum SDK | SHA-256 |
 |---|---|---:|---:|---|
 | Tiêu chuẩn | [`PhoneME-Turbo-1.2.3.apk`](releases/v1.2.3/PhoneME-Turbo-1.2.3.apk) | `28` | `18` | `a402691dc20d45a78f19e86e6cc4a645b5766cad7d0d17a7b7ff03b479d9e003` |
-| API 8 | [`PhoneME-Turbo-1.2.3-api8.apk`](releases/v1.2.3/PhoneME-Turbo-1.2.3-api8.apk) | `45` | `8` | `7e9dd97bcd2eb3eb2ae9ecfbf6b0d351b5add081005154c481660df18d950df7` |
+| API 8 | [`PhoneME-Turbo-1.2.3-api8.apk`](releases/v1.2.3/PhoneME-Turbo-1.2.3-api8.apk) | `45` | `8` | `fa109d83742a12d28ec9f0ca102fa0d738188ecaebb2f388e6bac9f7c3ee4377` |
 
 Cả hai APK dùng package `be.preuveneers.phoneme.fpmidp`, target SDK `22`, native ABI `armeabi` và cùng certificate phát hành PhoneME Turbo. Tài liệu release nằm trong [`releases/v1.2.3/`](releases/v1.2.3/). Bản unsigned không được phân phối.
 
@@ -32,6 +32,7 @@ Cả hai APK dùng package `be.preuveneers.phoneme.fpmidp`, target SDK `22`, nat
 - Thoát EdgeSwipe dừng callback khung hình trước khi dọn player.
 - Ghi log chẩn đoán theo tùy chọn debug và không tự bật bàn phím khi mở cài đặt Canvas.
 - Bản API 8 giữ các tinh chỉnh tương thích Android 2.2, gồm thanh Canvas scale và cài đặt theo phiên bản Android.
+- Bản API 8 v2 khôi phục chuỗi thoát `killVM()` legacy, đóng audio player qua `finishProxies()` trước khi thoát và loại bỏ framebuffer exit gate dư thừa.
 
 Chi tiết nằm trong [`releases/v1.2.3/CHANGELOG.md`](releases/v1.2.3/CHANGELOG.md).
 

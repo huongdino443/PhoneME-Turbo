@@ -8,6 +8,7 @@
 - Sửa sắp xếp/truy cập file gần đây trong trình duyệt JAR và cập nhật thời gian thư mục khi ghi tệp.
 - Thoát EdgeSwipe có dừng callback khung hình trước khi dọn player.
 - Ghi log chẩn đoán theo tùy chọn debug; tránh tự bật bàn phím khi mở cài đặt Canvas.
+- Riêng bản API 8 v2: khôi phục chuỗi thoát `killVM()` legacy, gọi `finishProxies()` trước để đóng audio player và loại bỏ framebuffer exit gate dư thừa.
 
 ### English
 - Carries forward all 1.2.2 features: GL/HD FPS, true-size rendering, gamepad layouts, and game-focused settings.
@@ -15,6 +16,7 @@
 - Fixes recent-file sorting/access and updates directory timestamps when files are written.
 - EdgeSwipe exit stops framebuffer callbacks before releasing players.
 - Makes diagnostic logging opt-in through debug settings and prevents the Canvas settings screen from opening the keyboard unexpectedly.
+- API 8 v2 restores the legacy `killVM()` exit sequence, calls `finishProxies()` first to close active audio players, and removes the extra framebuffer exit gate.
 
 ## Build information
 - Version: `1.2.3`; version code `28`; minimum SDK `18`; target SDK `22`.

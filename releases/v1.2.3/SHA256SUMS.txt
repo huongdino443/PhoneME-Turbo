@@ -1,2 +1,2 @@
 a402691dc20d45a78f19e86e6cc4a645b5766cad7d0d17a7b7ff03b479d9e003  PhoneME-Turbo-1.2.3.apk
-7e9dd97bcd2eb3eb2ae9ecfbf6b0d351b5add081005154c481660df18d950df7  PhoneME-Turbo-1.2.3-api8.apk
+fa109d83742a12d28ec9f0ca102fa0d738188ecaebb2f388e6bac9f7c3ee4377  PhoneME-Turbo-1.2.3-api8.apk

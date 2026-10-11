@@ -11,6 +11,7 @@ PhoneME Turbo 1.2.3 gồm bản tiêu chuẩn cho Android API 18 trở lên và 
 - Thoát EdgeSwipe dừng callback khung hình trước khi dọn player.
 - Ghi log chẩn đoán theo tùy chọn debug; không tự bật bàn phím khi mở cài đặt Canvas.
 - Bản API 8 giữ các tinh chỉnh tương thích Android 2.2, gồm thanh Canvas scale và cài đặt theo phiên bản Android.
+- Riêng bản API 8 v2: khôi phục chuỗi thoát `killVM()` legacy, gọi `finishProxies()` trước để đóng audio player và loại bỏ framebuffer exit gate dư thừa.
 
 Chi tiết và checksum nằm tại [`releases/v1.2.3/`](releases/v1.2.3/).
 
