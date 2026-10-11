@@ -1,0 +1,2 @@
+a402691dc20d45a78f19e86e6cc4a645b5766cad7d0d17a7b7ff03b479d9e003  /home/ubuntu/phoneme-turbo-public/releases/v1.2.3/PhoneME-Turbo-1.2.3.apk
+7e9dd97bcd2eb3eb2ae9ecfbf6b0d351b5add081005154c481660df18d950df7  /home/ubuntu/phoneme-turbo-public/releases/v1.2.3/PhoneME-Turbo-1.2.3-api8.apk

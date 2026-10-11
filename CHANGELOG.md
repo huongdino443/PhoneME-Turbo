@@ -1,5 +1,19 @@
 # PhoneME Turbo changelog
 
+## 1.2.3 — bản phát hành hiện tại
+
+PhoneME Turbo 1.2.3 gồm bản tiêu chuẩn cho Android API 18 trở lên và bản API 8 dành cho Android 2.2 trở lên.
+
+### Thay đổi chính
+
+- Cải thiện phát JSR-135: giữ player khi `stop`, xử lý EOM/hủy callback và hỗ trợ luồng AMR.
+- Sửa sắp xếp/truy cập file gần đây trong trình duyệt JAR và cập nhật thời gian thư mục khi ghi tệp.
+- Thoát EdgeSwipe dừng callback khung hình trước khi dọn player.
+- Ghi log chẩn đoán theo tùy chọn debug; không tự bật bàn phím khi mở cài đặt Canvas.
+- Bản API 8 giữ các tinh chỉnh tương thích Android 2.2, gồm thanh Canvas scale và cài đặt theo phiên bản Android.
+
+Chi tiết và checksum nằm tại [`releases/v1.2.3/`](releases/v1.2.3/).
+
 ## 1.2.2 — bản phát hành hiện tại
 
 PhoneME Turbo 1.2.2 gồm bản tiêu chuẩn cho Android API 18 trở lên và bản API 8 dành cho Android 2.2 trở lên.

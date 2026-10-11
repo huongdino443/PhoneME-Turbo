@@ -16,14 +16,24 @@ Nếu game Java ME không khởi động trên PhoneME Turbo và log xuất hi�
 
 ## Bản phát hành hiện tại
 
-**PhoneME Turbo 1.2.2** được phát hành với hai APK cùng dòng phiên bản:
+**PhoneME Turbo 1.2.3** được phát hành với hai APK cùng dòng phiên bản:
 
 | Biến thể | APK | Version code | Minimum SDK | SHA-256 |
 |---|---|---:|---:|---|
-| Tiêu chuẩn | [`PhoneME-Turbo-1.2.2.apk`](releases/v1.2.2/PhoneME-Turbo-1.2.2.apk) | `27` | `18` | `f7785cc2cc7349251c742878c374a15323949d59261f4d4dc3dd61c74b47efac` |
-| API 8 | [`PhoneME-Turbo-1.2.2-api8.apk`](releases/v1.2.2/PhoneME-Turbo-1.2.2-api8.apk) | `44` | `8` | `aeefbc73800a5f84c24bc7f1d26b893148b7ceca2881b71b39f56f105d896e62` |
+| Tiêu chuẩn | [`PhoneME-Turbo-1.2.3.apk`](releases/v1.2.3/PhoneME-Turbo-1.2.3.apk) | `28` | `18` | `a402691dc20d45a78f19e86e6cc4a645b5766cad7d0d17a7b7ff03b479d9e003` |
+| API 8 | [`PhoneME-Turbo-1.2.3-api8.apk`](releases/v1.2.3/PhoneME-Turbo-1.2.3-api8.apk) | `45` | `8` | `7e9dd97bcd2eb3eb2ae9ecfbf6b0d351b5add081005154c481660df18d950df7` |
 
-Cả hai APK dùng package `be.preuveneers.phoneme.fpmidp`, target SDK `22`, native ABI `armeabi` và cùng certificate phát hành PhoneME Turbo. Tài liệu release nằm trong [`releases/v1.2.2/`](releases/v1.2.2/). Bản unsigned không được phân phối.
+Cả hai APK dùng package `be.preuveneers.phoneme.fpmidp`, target SDK `22`, native ABI `armeabi` và cùng certificate phát hành PhoneME Turbo. Tài liệu release nằm trong [`releases/v1.2.3/`](releases/v1.2.3/). Bản unsigned không được phân phối.
+
+## Thay đổi chính trong 1.2.3
+
+- Cải thiện phát JSR-135: giữ player khi `stop`, xử lý EOM/hủy callback và hỗ trợ luồng AMR.
+- Sửa sắp xếp và truy cập file gần đây trong trình duyệt JAR, đồng thời cập nhật thời gian thư mục khi ghi tệp.
+- Thoát EdgeSwipe dừng callback khung hình trước khi dọn player.
+- Ghi log chẩn đoán theo tùy chọn debug và không tự bật bàn phím khi mở cài đặt Canvas.
+- Bản API 8 giữ các tinh chỉnh tương thích Android 2.2, gồm thanh Canvas scale và cài đặt theo phiên bản Android.
+
+Chi tiết nằm trong [`releases/v1.2.3/CHANGELOG.md`](releases/v1.2.3/CHANGELOG.md).
 
 ## Thay đổi chính trong 1.2.2
 
@@ -87,7 +97,8 @@ Xem [`releases/v1.2.0/SOURCE/BUILDING.md`](releases/v1.2.0/SOURCE/BUILDING.md) v
 
 | Đường dẫn | Nội dung |
 |---|---|
-| `releases/v1.2.2/` | Snapshot phát hành mới nhất: hai APK release-signed, changelog và checksum. |
+| `releases/v1.2.3/` | Snapshot phát hành mới nhất: hai APK release-signed, changelog và checksum. |
+| `releases/v1.2.2/` | Snapshot lịch sử: hai APK release-signed, changelog và checksum. |
 | `releases/v1.2.0/` | Snapshot lịch sử: APK, source, notices, checksum và verification. |
 | `docs/` | Tài liệu kỹ thuật và các assessment lịch sử cần giữ để tham khảo. |
 | `tools/phoneme-converter/` | Công cụ web độc lập để kiểm tra và chuẩn hóa JAR Java ME gặp lỗi xác minh trên PhoneME Turbo. |
