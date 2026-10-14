@@ -29,7 +29,6 @@ Cả hai APK dùng package `be.preuveneers.phoneme.fpmidp`, target SDK `22`, nat
 
 - Bổ sung trình tạo, chỉnh sửa, chọn và xóa mẫu gamepad tùy chỉnh; giữ riêng bố cục dọc/ngang.
 - Sửa phép tính số hàng/cột: giữ sáu ô ở cạnh ngắn và làm tròn cạnh dài đến số nguyên gần nhất; lưới tham chiếu là 6×8 trên màn hình 240×320 và 6×9 trên 320×480.
-- Giữ nút Thêm/Xóa mẫu riêng biệt và căn chiều cao 44dp.
 - Bản API 8 giữ tương thích Android 2.2/API 8, cùng các tính năng phát âm thanh, trình duyệt tệp và luồng thoát của nhánh 1.2.3.
 
 Chi tiết nằm trong [`releases/v1.2.4/CHANGELOG.md`](releases/v1.2.4/CHANGELOG.md).
