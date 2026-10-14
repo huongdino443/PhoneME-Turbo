@@ -1,5 +1,18 @@
 # PhoneME Turbo changelog
 
+## 1.2.4 — bản phát hành hiện tại
+
+PhoneME Turbo 1.2.4 gồm bản tiêu chuẩn cho Android API 18 trở lên và bản API 8 dành cho Android 2.2 trở lên.
+
+### Thay đổi chính
+
+- Bổ sung trình tạo, chỉnh sửa, chọn và xóa mẫu gamepad tùy chỉnh; giữ riêng bố cục dọc/ngang.
+- Sửa phép tính số hàng/cột: giữ sáu ô ở cạnh ngắn và làm tròn cạnh dài đến số nguyên gần nhất; lưới tham chiếu là 6×8 trên màn hình 240×320 và 6×9 trên 320×480.
+- Giữ nút Thêm/Xóa mẫu riêng biệt và căn chiều cao 44dp.
+- Bản API 8 giữ tương thích Android 2.2/API 8, cùng các tính năng phát âm thanh, trình duyệt tệp và luồng thoát của nhánh 1.2.3.
+
+Chi tiết và checksum nằm tại [`releases/v1.2.4/`](releases/v1.2.4/).
+
 ## 1.2.3 — bản phát hành hiện tại
 
 PhoneME Turbo 1.2.3 gồm bản tiêu chuẩn cho Android API 18 trở lên và bản API 8 dành cho Android 2.2 trở lên.

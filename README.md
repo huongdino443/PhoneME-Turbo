@@ -16,14 +16,23 @@ Nếu game Java ME không khởi động trên PhoneME Turbo và log xuất hi�
 
 ## Bản phát hành hiện tại
 
-**PhoneME Turbo 1.2.3** được phát hành với hai APK cùng dòng phiên bản:
+**PhoneME Turbo 1.2.4** được phát hành với hai APK cùng dòng phiên bản:
 
 | Biến thể | APK | Version code | Minimum SDK | SHA-256 |
 |---|---|---:|---:|---|
-| Tiêu chuẩn | [`PhoneME-Turbo-1.2.3.apk`](releases/v1.2.3/PhoneME-Turbo-1.2.3.apk) | `28` | `18` | `a402691dc20d45a78f19e86e6cc4a645b5766cad7d0d17a7b7ff03b479d9e003` |
-| API 8 | [`PhoneME-Turbo-1.2.3-api8.apk`](releases/v1.2.3/PhoneME-Turbo-1.2.3-api8.apk) | `45` | `8` | `fa109d83742a12d28ec9f0ca102fa0d738188ecaebb2f388e6bac9f7c3ee4377` |
+| Tiêu chuẩn | [`PhoneME-Turbo-1.2.4.apk`](releases/v1.2.4/PhoneME-Turbo-1.2.4.apk) | `29` | `18` | `13610b8a75483586692f57b0ca7ee376c5ec7f4a26e0605a8abb1636e6f1b80a` |
+| API 8 | [`PhoneME-Turbo-1.2.4-api8.apk`](releases/v1.2.4/PhoneME-Turbo-1.2.4-api8.apk) | `46` | `8` | `65bfaf8f3b562bfced57d9a2de4dc3f573e895ecd82468811d4c793d28cbc04a` |
 
-Cả hai APK dùng package `be.preuveneers.phoneme.fpmidp`, target SDK `22`, native ABI `armeabi` và cùng certificate phát hành PhoneME Turbo. Tài liệu release nằm trong [`releases/v1.2.3/`](releases/v1.2.3/). Bản unsigned không được phân phối.
+Cả hai APK dùng package `be.preuveneers.phoneme.fpmidp`, target SDK `22`, native ABI `armeabi` và cùng certificate phát hành PhoneME Turbo. Tài liệu release nằm trong [`releases/v1.2.4/`](releases/v1.2.4/). Bản unsigned không được phân phối.
+
+## Thay đổi chính trong 1.2.4
+
+- Bổ sung trình tạo, chỉnh sửa, chọn và xóa mẫu gamepad tùy chỉnh; giữ riêng bố cục dọc/ngang.
+- Sửa phép tính số hàng/cột: giữ sáu ô ở cạnh ngắn và làm tròn cạnh dài đến số nguyên gần nhất; lưới tham chiếu là 6×8 trên màn hình 240×320 và 6×9 trên 320×480.
+- Giữ nút Thêm/Xóa mẫu riêng biệt và căn chiều cao 44dp.
+- Bản API 8 giữ tương thích Android 2.2/API 8, cùng các tính năng phát âm thanh, trình duyệt tệp và luồng thoát của nhánh 1.2.3.
+
+Chi tiết nằm trong [`releases/v1.2.4/CHANGELOG.md`](releases/v1.2.4/CHANGELOG.md).
 
 ## Thay đổi chính trong 1.2.3
 
@@ -76,10 +85,10 @@ Bản phát hành **không tuyên bố** bổ sung tổng quát cho MMAPI music 
 1. Sao lưu game, RMS và dữ liệu quan trọng.
 2. Kiểm tra SHA-256 của APK nếu file được tải qua kênh khác.
 3. Nếu Android báo xung đột chữ ký, gỡ bản cũ trước khi cài. Việc gỡ ứng dụng có thể xóa dữ liệu private của app.
-4. Hai APK 1.2.2 sử dụng cùng certificate phát hành PhoneME Turbo; hãy chọn biến thể phù hợp với API Android của thiết bị.
+4. Hai APK 1.2.4 sử dụng cùng certificate phát hành PhoneME Turbo; hãy chọn biến thể phù hợp với API Android của thiết bị.
 5. Sau khi cài, dùng File Manager trong app để chọn JAR/JAD và kiểm tra quyền truy cập theo Android/thiết bị.
 
-Chữ ký và tính toàn vẹn ZIP của cả hai APK 1.2.2 đã được kiểm tra. Bản API 8 giữ minimum SDK 8 để hỗ trợ Android 2.2.
+Chữ ký và checksum của cả hai APK 1.2.4 đã được kiểm tra. Bản API 8 giữ minimum SDK 8 để hỗ trợ Android 2.2.
 
 ## Source và khả năng tái tạo
 
@@ -98,7 +107,8 @@ Xem [`releases/v1.2.0/SOURCE/BUILDING.md`](releases/v1.2.0/SOURCE/BUILDING.md) v
 
 | Đường dẫn | Nội dung |
 |---|---|
-| `releases/v1.2.3/` | Snapshot phát hành mới nhất: hai APK release-signed, changelog và checksum. |
+| `releases/v1.2.4/` | Snapshot phát hành mới nhất: hai APK release-signed, changelog và checksum. |
+| `releases/v1.2.3/` | Snapshot lịch sử: hai APK release-signed, changelog và checksum. |
 | `releases/v1.2.2/` | Snapshot lịch sử: hai APK release-signed, changelog và checksum. |
 | `releases/v1.2.0/` | Snapshot lịch sử: APK, source, notices, checksum và verification. |
 | `docs/` | Tài liệu kỹ thuật và các assessment lịch sử cần giữ để tham khảo. |

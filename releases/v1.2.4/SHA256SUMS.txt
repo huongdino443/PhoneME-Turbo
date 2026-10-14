@@ -1,0 +1,2 @@
+13610b8a75483586692f57b0ca7ee376c5ec7f4a26e0605a8abb1636e6f1b80a  PhoneME-Turbo-1.2.4.apk
+65bfaf8f3b562bfced57d9a2de4dc3f573e895ecd82468811d4c793d28cbc04a  PhoneME-Turbo-1.2.4-api8.apk
