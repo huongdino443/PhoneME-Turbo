@@ -102,6 +102,10 @@ Không có trong repository: private signing key, keystore, mật khẩu, full T
 
 Xem [`releases/v1.2.0/SOURCE/BUILDING.md`](releases/v1.2.0/SOURCE/BUILDING.md) và [`releases/v1.2.0/SOURCE/SOURCE_SCOPE.md`](releases/v1.2.0/SOURCE/SOURCE_SCOPE.md) để đọc tài liệu source/provenance lịch sử.
 
+## Công cụ APK cho cộng đồng
+
+Đã bổ sung một bộ nhỏ các công cụ APK-level có thể dùng lại: căn chỉnh APK, ký APK thử bằng chứng thư tạm và patch JSR-135 có kiểm tra cấu trúc bytecode. Bộ này không phải source tree đầy đủ và không kèm khóa ký. Xem hướng dẫn, phạm vi áp dụng và lưu ý license tại [tools/apk-patch-kit/](tools/apk-patch-kit/README.md).
+
 ## Cấu trúc repository
 
 | Đường dẫn | Nội dung |
