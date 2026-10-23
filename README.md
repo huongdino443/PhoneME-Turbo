@@ -35,59 +35,7 @@ Cả hai APK dùng package `be.preuveneers.phoneme.fpmidp`, target SDK `22`, nat
 
 Chi tiết nằm trong [`releases/v1.2.5/CHANGELOG.md`](releases/v1.2.5/CHANGELOG.md).
 
-## Thay đổi chính trong 1.2.4
-
-- Bổ sung trình tạo, chỉnh sửa, chọn và xóa mẫu gamepad tùy chỉnh; giữ riêng bố cục dọc/ngang.
-- Sửa phép tính số hàng/cột: giữ sáu ô ở cạnh ngắn và làm tròn cạnh dài đến số nguyên gần nhất; lưới tham chiếu là 6×8 trên màn hình 240×320 và 6×9 trên 320×480.
-- Bản API 8 giữ tương thích Android 2.2/API 8, cùng các tính năng phát âm thanh, trình duyệt tệp và luồng thoát của nhánh 1.2.3.
-
-Chi tiết nằm trong [`releases/v1.2.4/CHANGELOG.md`](releases/v1.2.4/CHANGELOG.md).
-
-## Thay đổi chính trong 1.2.3
-
-- Cải thiện phát JSR-135: giữ player khi `stop`, xử lý EOM/hủy callback và hỗ trợ luồng AMR.
-- Sửa sắp xếp và truy cập file gần đây trong trình duyệt JAR, đồng thời cập nhật thời gian thư mục khi ghi tệp.
-- Thoát EdgeSwipe dừng callback khung hình trước khi dọn player.
-- Ghi log chẩn đoán theo tùy chọn debug và không tự bật bàn phím khi mở cài đặt Canvas.
-- Bản API 8 giữ các tinh chỉnh tương thích Android 2.2, gồm thanh Canvas scale và cài đặt theo phiên bản Android.
-- Bản API 8 v2 khôi phục chuỗi thoát `killVM()` legacy, đóng audio player qua `finishProxies()` trước khi thoát và loại bỏ framebuffer exit gate dư thừa.
-
-Chi tiết nằm trong [`releases/v1.2.3/CHANGELOG.md`](releases/v1.2.3/CHANGELOG.md).
-
-## Thay đổi chính trong 1.2.2
-
-- Bổ sung công tắc FPS và bộ đếm frame tại điểm gửi khung hình lên GL/HD.
-- Hiển thị badge FPS 8dp trên lớp Android phía trên GL, co giãn theo mật độ màn hình.
-- Giữ nguyên đường Canvas cũ để không thay đổi cách vẽ FPS trên thiết bị dùng Canvas.
-- Tích hợp kích thước thật theo từng game, đồng bộ hình ảnh/vùng chạm và ba bố cục gamepad.
-- Giữ bitmap-font preference và ẩn các hàng cài đặt monitor/camera không cần cho game.
-- Bổ sung biến thể API 8 / Android 2.2 với xử lý title bar tương thích API thấp.
-
-Chi tiết nằm trong [`releases/v1.2.2/CHANGELOG.md`](releases/v1.2.2/CHANGELOG.md).
-
-## Thay đổi chính trong 1.2.1
-
-- Cập nhật một glyph trong atlas CoreBridge, giữ nguyên kích thước atlas và kênh alpha RGBA.
-- Sửa luồng gỡ game an toàn hơn, không xóa RMS hoặc JAR nguồn bên ngoài ứng dụng.
-- Cải thiện import JAR, export có xét cache, đường dẫn JAD và URI `file://`.
-- Tái sử dụng JAR đã chuẩn hóa hợp lệ và dọn WMA cache khi gỡ game.
-
-Chi tiết nằm trong [`releases/v1.2.1/CHANGELOG.md`](releases/v1.2.1/CHANGELOG.md).
-
-## Nền tảng tính năng của 1.2.0
-
-- Điều khiển riêng theo từng game: gamepad J2ME, key mapping và tùy chọn display/touch/GL/Canvas theo MIDlet.
-- EdgeSwipe với Exit, Settings, Virtual Keyboard và Gamepad.
-- Bàn phím launcher chạy dạng overlay thay vì làm co vùng nội dung.
-- Cải thiện touch pass-through quanh gamepad và vùng ngoài framebuffer.
-- Điều chỉnh EdgeSwipe cho màn hình nhỏ và nhiều tỷ lệ hiển thị.
-- Xử lý lại layout launcher sau xoay màn hình và giữ runtime/GL theo chính sách hiện có.
-- Bổ sung có chọn lọc một số Nokia API shim và xử lý một số class/JAR cũ bằng bản sao suite riêng.
-- Cải thiện LCDUI menu nhiều mục, scrolling và giao diện LCDUI dark theme.
-
-Chi tiết song ngữ nằm trong [`releases/v1.2.0/CHANGELOG.md`](releases/v1.2.0/CHANGELOG.md).
-
-Bản phát hành **không tuyên bố** bổ sung tổng quát cho MMAPI music playback, tự động chuyển playlist hoặc M3G rendering.
+Các thay đổi của các phiên bản trước được lưu trong từng trang [GitHub Releases](https://github.com/huongdino443/PhoneME-Turbo/releases).
 
 ## Cài đặt và nâng cấp
 
