@@ -1,5 +1,19 @@
 # PhoneME Turbo changelog
 
+## 1.2.5 — bản phát hành hiện tại
+
+PhoneME Turbo 1.2.5 gồm bản tiêu chuẩn cho Android API 18 trở lên và bản API 8 dành cho Android 2.2 trở lên.
+
+### Thay đổi chính
+
+- Bổ sung Mẫu 4 (Joystick) và hỗ trợ joystick cho mẫu gamepad tùy chỉnh; chỉnh sửa mẫu đã lưu cập nhật đúng mẫu thay vì tạo bản trùng, đồng thời giữ bố cục riêng cho màn hình dọc/ngang.
+- Khắc phục VolumeControl và cải thiện điều khiển âm thanh khi phát lại; âm thanh có thể chưa hoạt động đầy đủ trên Android 2.3–4.0.
+- Thêm nút chuyển nhanh giữa sắp xếp file theo tên và theo thời gian mới nhất trong File Manager.
+- Chuyển cách vẽ bitmap font sang native.
+- Thêm tùy chọn khóa hướng xoay hiện tại và áp dụng lựa chọn khi chuyển màn hình trong ứng dụng.
+
+Chi tiết và checksum nằm tại [`releases/v1.2.5/`](releases/v1.2.5/).
+
 ## 1.2.4 — bản phát hành hiện tại
 
 PhoneME Turbo 1.2.4 gồm bản tiêu chuẩn cho Android API 18 trở lên và bản API 8 dành cho Android 2.2 trở lên.
