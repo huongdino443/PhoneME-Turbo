@@ -16,4 +16,4 @@ Hai APK sử dụng certificate phát hành PhoneME Turbo. Bản unsigned không
 - `PhoneME-Turbo-1.2.6.apk`: bản tiêu chuẩn, dành cho thiết bị Android API 18 trở lên.
 - `PhoneME-Turbo-1.2.6-api8.apk`: dành cho Android API 8 / Android 2.2, phù hợp hơn với Android đời thấp hoặc thiết bị cấu hình thấp.
 
-**Người dùng nên ưu tiên chọn bản PhoneME Turbo 1.2.6 tiêu chuẩn; chỉ chọn bản API 8 khi thiết bị chạy Android đời thấp hoặc không tương thích với bản tiêu chuẩn.**
+***Người dùng nên ưu tiên chọn bản PhoneME Turbo 1.2.6 tiêu chuẩn; chỉ chọn bản API 8 khi thiết bị chạy Android đời thấp hoặc không tương thích với bản tiêu chuẩn.***
