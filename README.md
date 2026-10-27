@@ -16,24 +16,22 @@ Nếu game Java ME không khởi động trên PhoneME Turbo và log xuất hi�
 
 ## Bản phát hành hiện tại
 
-**PhoneME Turbo 1.2.5** được phát hành với hai APK cùng dòng phiên bản:
+**PhoneME Turbo 1.2.6** được phát hành với hai APK cùng dòng phiên bản:
 
 | Biến thể | APK | Version code | Minimum SDK | SHA-256 |
 |---|---|---:|---:|---|
-| Tiêu chuẩn | [`PhoneME-Turbo-1.2.5.apk`](releases/v1.2.5/PhoneME-Turbo-1.2.5.apk) | `34` | `18` | `dba81bc1822f0d387ae12b583f263f2e2a1e499b12afdaa94ae2703586e1a29f` |
-| API 8 | [`PhoneME-Turbo-1.2.5-api8.apk`](releases/v1.2.5/PhoneME-Turbo-1.2.5-api8.apk) | `48` | `8` | `bfb61991f500b35d27f61a79b0c8929b00fd35e2eb764f66192399751bb76a6e` |
+| Tiêu chuẩn | [`PhoneME-Turbo-1.2.6.apk`](releases/v1.2.6/PhoneME-Turbo-1.2.6.apk) | `35` | `18` | `9ef1c0e8571e1f9975d74a71e7b982f03e3024faffb444efd44561784091876f` |
+| API 8 | [`PhoneME-Turbo-1.2.6-api8.apk`](releases/v1.2.6/PhoneME-Turbo-1.2.6-api8.apk) | `49` | `8` | `dce0eca59933e43b1480df9ec389b446ee41fe2338efbc0d02713c6cd56c4f08` |
 
-Cả hai APK dùng package `be.preuveneers.phoneme.fpmidp`, target SDK `22`, native ABI `armeabi` và cùng certificate phát hành PhoneME Turbo. Tài liệu release nằm trong [`releases/v1.2.5/`](releases/v1.2.5/). Bản unsigned không được phân phối.
+Cả hai APK dùng package `be.preuveneers.phoneme.fpmidp`, target SDK `22`, native ABI `armeabi` và cùng certificate phát hành PhoneME Turbo. Tài liệu release nằm trong [`releases/v1.2.6/`](releases/v1.2.6/). Bản unsigned không được phân phối.
 
-## Thay đổi chính trong 1.2.5
+## Thay đổi chính trong 1.2.6
 
-- Bổ sung Mẫu 4 (Joystick) và hỗ trợ joystick cho mẫu gamepad tùy chỉnh; chỉnh sửa mẫu đã lưu cập nhật đúng mẫu thay vì tạo bản trùng, đồng thời giữ bố cục riêng cho màn hình dọc/ngang.
-- Khắc phục VolumeControl và cải thiện điều khiển âm thanh khi phát lại; âm thanh có thể chưa hoạt động đầy đủ trên Android 2.3–4.0.
-- Thêm nút chuyển nhanh giữa sắp xếp file theo tên và theo thời gian mới nhất trong File Manager.
-- Chuyển cách vẽ bitmap font sang native.
-- Thêm tùy chọn khóa hướng xoay hiện tại và áp dụng lựa chọn khi chuyển màn hình trong ứng dụng.
+- Thêm thao tác chụp ảnh vào EdgeSwipe, hỗ trợ cả game Canvas và GL; ảnh được lưu trong `Pictures/PhoneME`.
+- Cập nhật menu EdgeSwipe lên 5 mục và cho phép phím MENU vật lý mở EdgeSwipe trên thiết bị có phím này.
+- Giữ hướng màn hình đã chọn khi ứng dụng chạy nền hoặc Activity được tạo lại; yêu cầu hướng từ CameraProxy không ghi đè khóa hướng.
 
-Chi tiết nằm trong [`releases/v1.2.5/CHANGELOG.md`](releases/v1.2.5/CHANGELOG.md).
+Chi tiết nằm trong [`releases/v1.2.6/CHANGELOG.md`](releases/v1.2.6/CHANGELOG.md).
 
 Các thay đổi của các phiên bản trước được lưu trong từng trang [GitHub Releases](https://github.com/huongdino443/PhoneME-Turbo/releases).
 
@@ -42,10 +40,10 @@ Các thay đổi của các phiên bản trước được lưu trong từng tra
 1. Sao lưu game, RMS và dữ liệu quan trọng.
 2. Kiểm tra SHA-256 của APK nếu file được tải qua kênh khác.
 3. Nếu Android báo xung đột chữ ký, gỡ bản cũ trước khi cài. Việc gỡ ứng dụng có thể xóa dữ liệu private của app.
-4. Hai APK 1.2.5 sử dụng cùng certificate phát hành PhoneME Turbo; hãy chọn biến thể phù hợp với API Android của thiết bị.
+4. Hai APK 1.2.6 sử dụng cùng certificate phát hành PhoneME Turbo; hãy chọn biến thể phù hợp với API Android của thiết bị.
 5. Sau khi cài, dùng File Manager trong app để chọn JAR/JAD và kiểm tra quyền truy cập theo Android/thiết bị.
 
-Chữ ký và checksum của cả hai APK 1.2.5 đã được kiểm tra. Bản API 8 giữ minimum SDK 8 để hỗ trợ Android 2.2.
+Chữ ký và checksum của cả hai APK 1.2.6 đã được kiểm tra. Bản API 8 giữ minimum SDK 8 để hỗ trợ Android 2.2.
 
 ## Source và khả năng tái tạo
 
@@ -68,7 +66,8 @@ Xem [`releases/v1.2.0/SOURCE/BUILDING.md`](releases/v1.2.0/SOURCE/BUILDING.md) v
 
 | Đường dẫn | Nội dung |
 |---|---|
-| `releases/v1.2.5/` | Snapshot phát hành mới nhất: hai APK release-signed, changelog và checksum. |
+| `releases/v1.2.6/` | Snapshot phát hành mới nhất: hai APK release-signed, changelog và checksum. |
+| `releases/v1.2.5/` | Snapshot lịch sử: hai APK release-signed, changelog và checksum. |
 | `releases/v1.2.4/` | Snapshot lịch sử: hai APK release-signed, changelog và checksum. |
 | `releases/v1.2.3/` | Snapshot lịch sử: hai APK release-signed, changelog và checksum. |
 | `releases/v1.2.2/` | Snapshot lịch sử: hai APK release-signed, changelog và checksum. |
@@ -79,7 +78,7 @@ Xem [`releases/v1.2.0/SOURCE/BUILDING.md`](releases/v1.2.0/SOURCE/BUILDING.md) v
 | `CHANGELOG.md` | Lịch sử phát hành và thay đổi ở mức dự án. |
 | `NOTICE.md` | Ghi chú license/provenance ở cấp repository. |
 
-Các file lịch sử ngoài `releases/v1.2.2/` được giữ để provenance; khi cài đặt, ưu tiên biến thể 1.2.5 phù hợp với thiết bị.
+Các file lịch sử ngoài `releases/v1.2.2/` được giữ để provenance; khi cài đặt hoặc tiếp tục phát triển, ưu tiên biến thể 1.2.6 phù hợp với thiết bị.
 
 ## Giấy phép và provenance
 

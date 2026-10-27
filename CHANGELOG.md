@@ -1,6 +1,18 @@
 # PhoneME Turbo changelog
 
-## 1.2.5 — bản phát hành hiện tại
+## 1.2.6 — bản phát hành hiện tại
+
+PhoneME Turbo 1.2.6 gồm bản tiêu chuẩn cho Android API 18 trở lên và bản API 8 dành cho Android 2.2 trở lên.
+
+### Thay đổi chính
+
+- Thêm thao tác chụp ảnh vào EdgeSwipe, hỗ trợ cả game Canvas và GL; ảnh được lưu trong `Pictures/PhoneME`.
+- Cập nhật menu EdgeSwipe lên 5 mục và cho phép phím MENU vật lý mở EdgeSwipe trên thiết bị có phím này.
+- Giữ hướng màn hình đã chọn khi ứng dụng chạy nền hoặc Activity được tạo lại; yêu cầu hướng từ CameraProxy không ghi đè khóa hướng.
+
+Chi tiết và checksum nằm tại [`releases/v1.2.6/`](releases/v1.2.6/).
+
+## 1.2.5 — bản phát hành trước đó
 
 PhoneME Turbo 1.2.5 gồm bản tiêu chuẩn cho Android API 18 trở lên và bản API 8 dành cho Android 2.2 trở lên.
 
